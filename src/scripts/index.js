@@ -1,9 +1,14 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         if (window.scrollY > 20) {
-            $('.navbar').addClass("sticky");
+            // the below class one for navbar,one for menu icon
+            $('.navbar,.menu-btn').addClass("sticky");
         } else {
-            $('.navbar').removeClass('sticky');
+            $('.navbar,.menu-btn').removeClass('sticky');
         }
+    })
+    // toggle items and navbar js
+    $('.menu-btn').click(function () {
+        $('.navbar .items').toggleClass('active');
     })
 })

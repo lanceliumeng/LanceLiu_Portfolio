@@ -8,7 +8,10 @@
     <title>LanceLiu Portfolio Website</title>
     <link rel="stylesheet" href="../styles/mainStyle.css">
     <!-- Font Awesome 5 for icons -->
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!-- below link doesn't work for me cause CORS response header values are invalid -->
+    <!-- https://github.com/FortAwesome/Font-Awesome/issues/9310 issue#9310 got solution! -->
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/ffb39d5850.js" crossorigin="anonymous"></script>
     <!-- for navbar animation -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -30,8 +33,8 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="menu-btn">
-                <!-- class came from Font Awesome 5 -->
-                <i class="fas fa-bars"></i>
+                <!-- class name came from Font Awesome 5, i create my own icon-->
+                <i class="fas fa-space-shuttle"></i>
             </div>
         </div>
     </nav>
@@ -101,6 +104,7 @@
         tempora, ullam quaerat sint accusantium libero officiis nihil delectus architecto natus cum laboriosam quae?</p>
 
     <script src="../scripts/index.js"></script>
+    <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script> -->
 </body>
 
 </html>
