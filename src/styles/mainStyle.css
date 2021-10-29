@@ -21,6 +21,13 @@
     width: 100%;
     padding:30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition:all 0.3s ease;
+}
+
+/* for DOM js function add or move the class => navbar */
+.navbar.sticky{
+    padding:15px 0;
+    background:black;
 }
 
 .navbar .max-width {
@@ -36,7 +43,19 @@
 }
 .navbar .logo a span {
     color:#fa4006;
+    transition:all 0.3s ease;
 }
+/* for DOM js function add or move the class => Logo */
+/* make sure logo has the same transition value as navbar */
+.navbar.sticky .logo a span {
+    color: white;
+}
+
+/* this is just for fun, when add class sticky, my logo hover color can change as well. */
+.navbar.sticky .logo a span:hover{
+    color:#06cdfa;
+}
+
 
 .navbar .items li {
     list-style: none;
@@ -54,12 +73,26 @@
 .navbar .items li a:hover{
     color:#fa4006 ;
 }
+/* this is just for fun, when add class sticky, items hover color can change as well. */
+.navbar.sticky .items li a:hover{
+    color:#06cdfa;
+}
+
+/* menu button style */
+.menu-btn {
+    color:white;
+    font-size: 23px;
+    cursor: pointer;
+}
 
 
 /* home section style */
 .home {
     display: flex;
-    background: url("/src/images/home-page-final.jpeg") no-repeat center;
+    background: url("/src/images/home-page-final.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     color: white;
     min-height: 500px;
