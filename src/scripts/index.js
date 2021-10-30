@@ -9,6 +9,9 @@ $(document).ready(function () {
     })
     // toggle items and navbar js
     $('.menu-btn').click(function () {
+        // hiden items menu
         $('.navbar .items').toggleClass('active');
+        // change humburger icon, this is not necessary, just for fun xD
+        $('.menu-btn i').toggleClass('active');
     })
 })

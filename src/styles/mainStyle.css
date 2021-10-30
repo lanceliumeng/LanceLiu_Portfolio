@@ -138,17 +138,43 @@
     color:#fa4006;
     font-weight: 500;
 }
+.home .home-content a {
+    display: inline-block;
+    background:#fa4006;
+    color: white;
+}
+.home .home-content .hire-btn:after{
+    content:"\f57e";
+}
 
 /* responsive @media start */
-@media screen and (max-width:947px){
+/* breakpoint1 */
+@media screen and (max-width:1200px){
+    .home .max-width {
+        margin-left: 0;
+    }
+}
+/* breakpoint2 */
+@media screen and (max-width:994px){
     /* adjust navbar logo & items vertical 0, horizontal 50px */
     .max-width {
         padding:0 50px;
     }
+}
+/* breakpoint3 */
+/* when screen max size and downwards, in my case, less than or equal to 947px */
+@media screen and (max-width:947px){
     /* z-index defines the stack level of the box in the current context, depends the number size */
+    /* in my case, I want narbar humburger in the top stack level */
     .menu-btn {
         display: block;
         z-index: 1;
+    }
+ /* pseudo-element that is the first child of the selected element */
+ /* when users click navbar humburger btn, it will be change another icon. */
+ /* from space icon change to earth icon */
+    .menu-btn i.active:before{
+        content:"\f57e";
     }
 
     /* adjust navbar items only */
@@ -156,13 +182,16 @@
         position: fixed;
         height: 100vh;
         width:100% ;
+    /* I want itmes menu can be hidden until users active them( JS click funcion) */
         left:-100%;
         top:0;
         background-color: black;
         text-align: center;
         padding-top: 80px;
+    /* the below one on only makes items menu hidden&appear transition more smoother */
         transition: all 0.3s ease;
     }
+    /* only use with js function */
     .navbar .items.active{
         left:0;
     }
@@ -174,4 +203,43 @@
         margin:15px 0;
         font-size: 20px;
     }
+
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
 }
+
+/* breakpoint4 */
+@media screen and (max-width:690px){
+    .max-width {
+        padding:0 30px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+}
+/* breakpoint5 */
+@media screen and (max-width:410px){
+    .home .home-content .text-2 {
+        font-size: 45px;
+    }
+    .home .home-content .text-3 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .home .home-content .text-2 {
+        font-size: 28px;
+    }
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
+}
+
