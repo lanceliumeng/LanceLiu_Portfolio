@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #60a9ff;
+}
+/* for control all sections max width */
+.max-width {
+  max-width: 1300px;
+  padding:0 80px;
+  margin: auto;
+}
+
+/* navbar style */
+.navbar {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  min-height: 10vh;
+  padding:30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition:all 0.3s ease;
+  z-index: 2;
+  /* let navbar beyond about me title when scroll down */
+}
+
+/* for DOM js function add or move the class => navbar */
+.navbar.sticky{
+  padding:15px 0;
+  background:black;
+  min-height: 8vh;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a{
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+}
+.navbar .logo a span {
+  color:#fa4006;
+  transition:all 0.3s ease;
+}
+/* for DOM js function add or move the class => Logo */
+/* make sure logo has the same transition value as navbar */
+.navbar.sticky .logo a span {
+  color: white;
+}
+
+/* this is just for fun, when add class sticky, my logo hover color can change as well. */
+.navbar.sticky .logo a span:hover{
+  color:#06cdfa;
+}
+
+
+.navbar .items li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .items li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 25px ;
+  transition: color 0.3 ease;
+  /* can not be 0.5s, looks like a little bit lagge */
+}
+.navbar .items li a:hover{
+  color:#fa4006 ;
+}
+/* this is just for fun, when add class sticky, items hover color can change as well. */
+.navbar.sticky .items li a:hover{
+  color:#06cdfa;
+}
+
+/* menu btn style */
+.menu-btn {
+  font-size:23px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn i:hover {
+  color:#fa4006 ;
+}
+/* this is just for fun, when add class sticky, btn hover color can change as well. */
+.menu-btn.sticky i:hover{
+  color:#06cdfa;
+}
+
+/* menu button style */
+.menu-btn {
+  color:white;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+
+/* panel content start */
+.panel-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  margin-top: 10%;
+}
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #016ff9;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child{
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016ff9; 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+  background-color: #269aff;
+  color: white;
+}
+
+/* breakpoint start */
+/* breakpoint 1 */
+@media screen and (min-width:320px){
+  .max-width {
+    padding:0 50px;
+}
+}
+/* breakpoint 2 */
+@media (min-width: 961px){
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+/* breakpoint 3 */
+@media screen and (max-width:994px){
+  /* adjust navbar logo & items vertical 0, horizontal 50px */
+  .max-width {
+      padding:0 50px;
+  }
+}
+/* breakpoint4 */
+/* when screen max size and downwards, in my case, less than or equal to 947px */
+@media screen and (max-width:947px){
+  /* z-index defines the stack level of the box in the current context, depends the number size */
+  /* in my case, I want narbar humburger in the top stack level */
+  .menu-btn {
+      display: block;
+      z-index: 1;
+  }
+/* pseudo-element that is the first child of the selected element */
+/* when users click navbar humburger btn, it will be change another icon. */
+/* from space icon change to earth icon */
+  .menu-btn i.active:before{
+      content:"\f57e";
+  }
+
+  /* adjust navbar items only */
+  .navbar .items{
+      position: fixed;
+      height: 100vh;
+      width:100% ;
+  /* I want itmes menu can be hidden until users active them( JS click funcion) */
+      left:-100%;
+      top:0;
+      background-color: black;
+      text-align: center;
+      padding-top: 80px;
+  /* the below one on only makes items menu hidden&appear transition more smoother */
+      transition: all 0.3s ease;
+  }
+  /* only use with js function */
+  .navbar .items.active{
+      left:0;
+  }
+  .navbar .items li{
+      display: block;
+  }
+  .navbar .items li a{
+      display:inline-block;
+      margin:15px 0;
+      font-size: 20px;
+  }
+
+}

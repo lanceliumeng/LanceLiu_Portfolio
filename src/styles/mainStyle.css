@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* for control all sections max width */
 .max-width {
     max-width: 1300px;
@@ -168,12 +172,13 @@
 }
 
 /* about-me section style */
-section{
+section#about-me{
     padding: 100px 0;
 }
 .about-me{
     font-family: 'Poppins',sans-serif;
 }
+/* for about-me h2 */
 .about-me .title2{
     position:relative;
     font-family: 'Ubuntu',sans-serif;
@@ -201,10 +206,9 @@ section{
     padding: 5px;
     background-color: white;
     transform: translateX(-50%);
-    font-size: 25px;
+    font-size: 20px;
     color: #fa4006;
 }
-
 /* about me section flex box control */
 .about-me .about-content{
     display: flex;
@@ -281,26 +285,96 @@ section{
     border: 2px solid #06cdfa;
 }
 
-
-
-/* back-up start */
-/* .about-me .title2{
-    position: relative;
+/* My projects section style, h2 style similar as about-me part */
+section#projects{
+    padding: 100px 0;
+}
+.projects {
+    font-family: 'Poppins',sans-serif;
+}
+/* for projects h2 */
+.projects .title2{
+    position:relative;
     font-family: 'Ubuntu',sans-serif;
     text-align: center;
     font-size:40px;
     font-weight: 500;
-    
-}
-.about-me .title3{
-    font-family: 'Ubuntu',sans-serif;
-    font-size:25px;
-    text-align: center;
     margin-bottom: 60px;
-    padding-bottom: 20px;
-    text-decoration: #fa4006 wavy underline;
-} */
-/* back up ends */
+    padding-bottom: 30px;
+}
+.projects .title2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 180px;
+    height: 3px;
+    background-color: black;
+    transform: translateX(-50%);
+    background-color: white;
+}
+.projects .title2::after{
+    content:'what i created';
+    position: absolute;
+    bottom: -15px;
+    left:50%;
+    padding: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #06cdfa;
+    background-color: rgb(17,17,17);
+}
+.projects{
+    background-color: rgb(17,17,17);
+    color: white;
+}
+/* for projects 3 cards content */
+.projects .projects-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/* https://developers.google.com/web/updates/2012/03/CSS-layout-gets-smarter-with-calc */
+/* calc() property is easy to layout  */
+.projects .projects-content .card{
+    background-color: rgb(34,34,34);
+    width:calc(33% - 20px);
+    text-align: center;
+    border-radius: 6px;
+    padding: 25px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+.projects .projects-content .card:hover{
+    background-color: #FF5151;
+}
+
+.projects .projects-content .card .box{
+    transition:all 0.3s ease;
+}
+.projects .projects-content .card:hover .box{
+   transform: scale(1.1);
+}
+
+.projects .projects-content .card i{
+    font-size: 50px;
+    color: #06cdfa;
+}
+
+.projects .projects-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.projects .projects-content .card a{
+    text-decoration: none;
+    color: white;
+}
+.projects .projects-content .card a:active{
+    color: #06fa90f2;
+}
 
 /* responsive @media start */
 /* breakpoint1 */
@@ -328,6 +402,13 @@ section{
 @media screen and (min-width:994px) and (max-width:1166px){
 .about-me .about-content .right .my-details .left-part .email{
         margin-top: 0;
+    }
+}
+/* breakpoint 4 for projects layout */
+@media screen and (max-width:1040px){
+    .projects .projects-content .card{
+        width: calc(50% - 10px);
+        margin: 20px 0;
     }
 }
 
@@ -412,7 +493,6 @@ section{
         font-size: 28px;
     }
 
-
 }
 
 /* breakpoint5 */
@@ -429,6 +509,10 @@ section{
     .home .home-content .hire-btn{
         font-size: 20px;
         padding:10px 25px;
+    }
+           /* 2nd breakpoint for projects content */
+    .projects .projects-content .card{
+        width: 100%;
     }
 }
 /* breakpoint6 only adjust for about-me list */
@@ -518,3 +602,24 @@ section{
     }
 }
 
+
+
+
+/* back-up start */
+/* .about-me .title2{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size:40px;
+    font-weight: 500;
+    
+}
+.about-me .title3{
+    font-family: 'Ubuntu',sans-serif;
+    font-size:25px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-decoration: #fa4006 wavy underline;
+} */
+/* back up ends */

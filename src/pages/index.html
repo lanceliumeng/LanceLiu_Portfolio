@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lance Liu Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LanceLiu Portfolio Website</title>
     <link rel="stylesheet" href="../styles/mainStyle.css">
@@ -25,9 +26,9 @@
             <div class="logo"><a href="#">Lance<span>liu.</span></a></div>
             <!-- navbar items, home, skills etc -->
             <ul class="items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
@@ -57,6 +58,7 @@
     <section class="about-me" id="about-me">
         <div class="max-width">
             <h2 class="title2">My Biography</h2>
+            <!-- about-me whole content start -->
             <div class="about-content">
                 <!-- left content -->
                 <div class="content left">
@@ -85,6 +87,7 @@
                     <a class="cv-btn" href="#">Explore CV</a>
                 </div>
             </div>
+            <!-- about-me whole content end -->
         </div>
     </section>
     <!-- About Me section end -->
@@ -92,16 +95,15 @@
     <!-- My Project section start -->
     <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title2">Projects</h2>
-            <div class="project-content">
+            <h2 class="title2">My Projects</h2>
+            <!-- my projects content start -->
+            <div class="projects-content">
                 <!-- my project card 1 -->
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-tasks"></i>
                         <div class="text">Project I</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam quae illo assumenda
-                            a exercitationem! Praesentium et placeat provident odit voluptatum saepe quaerat dolorem
-                            cupiditate? Corporis autem nesciunt alias optio!</p>
+                        <a href="project-one.html" target="_blank">this is my project 1, it name is Price Panel</a>
                     </div>
                 </div>
                 <!-- my project card 2 -->
@@ -109,9 +111,7 @@
                     <div class="box">
                         <i class="fas fa-project-diagram"></i>
                         <div class="text">Project II</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam quae illo assumenda
-                            a exercitationem! Praesentium et placeat provident odit voluptatum saepe quaerat dolorem
-                            cupiditate? Corporis autem nesciunt alias optio!</p>
+                        <a href="project-two.html" target="_blank">this is my project 2, it name is Candy Museum</a>
                     </div>
                 </div>
                 <!-- my project card 3 -->
@@ -119,15 +119,14 @@
                     <div class="box">
                         <i class="fas fa-file-code"></i>
                         <div class="text">Project III</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam quae illo assumenda
-                            a exercitationem! Praesentium et placeat provident odit voluptatum saepe quaerat dolorem
-                            cupiditate? Corporis autem nesciunt alias optio!</p>
+                        <a href="project-three.html" target="_blank">this is my project 3,it name is Score Keeper</a>
                     </div>
                 </div>
             </div>
+            <!-- my projects content end -->
+        </div>
     </section>
     <!-- My Project section end -->
-
 
     <script src="../scripts/index.js"></script>
     <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script> -->
