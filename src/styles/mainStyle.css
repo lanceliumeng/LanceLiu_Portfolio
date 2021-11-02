@@ -110,7 +110,7 @@ html{
 /* home section style */
 .home {
     display: flex;
-    background: url("/src/images/home-page-final.jpeg");
+    background: url("/src/images/home-page-background-image/home-page-final.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
