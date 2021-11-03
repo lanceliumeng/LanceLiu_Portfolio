@@ -170,6 +170,25 @@ html{
     font-weight: 800;
     padding: 0 5px;
 }
+/* only for links styles */
+.home .home-content .link{
+    display: inline-block;
+    text-align: center;
+    background:#06cdfa;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* border: 1px solid #fa4006; */
+    transition: all 0.3s ease;
+}
+.home .home-content .link:hover{
+    color: white;
+    background: none;
+    border: 2px solid #06cdfa;
+}
 
 /* about-me section style */
 section#about-me{
@@ -376,6 +395,129 @@ section#projects{
     color: #06fa90f2;
 }
 
+/* My Skills section style start, h2 style is similar above */
+section#skills{
+    padding: 100px 0;
+}
+.skills{
+    font-family: 'Poppins',sans-serif;
+}
+/* for about-me h2 */
+.skills .title2{
+    position:relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size:40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+}
+.skills .title2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 180px;
+    height: 3px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+.skills .title2::after{
+    content: 'keep improving';
+    position: absolute;
+    bottom: -15px;
+    left:50%;
+    padding: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #fa4006;
+}
+/* skills section flex box control */
+.skills .skills-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .skills-column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left-part .text{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left-part p{
+    text-align: justify;
+}
+/* explore more btn control */
+.skills .skills-content .left-part a{
+    display: inline-block;
+    background:#fa4006;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #fa4006;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left-part a:hover{
+    color: #06cdfa;
+    background: none;
+    border: 2px solid #06cdfa;
+}
+
+.skills .skills-content .right-part .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right-part .info{
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .skills-content .right-part .bars span{
+    font-weight: 500;
+    font-size: 16px;
+}
+.skills .skills-content .right-part .bars .bar{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    position: relative;
+}
+.skills .skills-content .right-part .bars .bar::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    /* width: 80%; */
+    background-color: #06cdfa;
+    left: 0;
+    top: 0;
+}
+.skills-content .right-part .bars .html::before{
+    width:70%;
+}
+.skills-content .right-part .bars .css::before{
+    width:60%;
+}
+.skills-content .right-part .bars .js::before{
+    width:40%;
+}
+.skills-content .right-part .bars .jq::before{
+    width:30%;
+}
+.skills-content .right-part .bars .mangoDB::before{
+    width:20%;
+}
+.skills-content .right-part .bars .ruby::before{
+    width: 0%;
+}
+
+
 /* responsive @media start */
 /* breakpoint1 */
 @media screen and (max-width:1300px){
@@ -472,6 +614,11 @@ section#projects{
         font-size: 23px;
         padding: 10px 30px;
     }
+    .home .home-content .link{
+        font-size: 15px;
+        padding: 5px 10px;
+        font-weight: 500;
+    }
 
     .max-width{
         max-width: 800px;
@@ -492,7 +639,16 @@ section#projects{
         text-align: center;
         font-size: 28px;
     }
-
+    /* for skill bars responsive control */
+    .skills .skills-content .skills-column{
+        width: 100%;
+    }
+    .skills .skills-content .left-part .text{
+        text-align: center;
+    }
+    .skills .skills-content .right-part{
+        margin-top: 30px;
+    }
 }
 
 /* breakpoint5 */
@@ -510,6 +666,11 @@ section#projects{
         font-size: 20px;
         padding:10px 25px;
     }
+    .home .home-content .link{
+        font-size: 13px;
+        padding: 5px 10px;
+        font-weight: 400;
+    }
            /* 2nd breakpoint for projects content */
     .projects .projects-content .card{
         width: 100%;
@@ -523,6 +684,9 @@ section#projects{
 }
 /* breakpoint7 only adjust for about-me list */
 @media screen and (max-width:458px){
+    .home .home-content .link .text{
+        display: none;
+    }
     .about-me .about-content .left img{
         height: 300px;
         width: 300px;
@@ -603,7 +767,41 @@ section#projects{
 }
 
 
+/* for another way to make skill bars
+.bar-container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+}
 
+.skill {
+    background-color: #06cdfa;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 60%;
+}
+
+.js {
+    width: 40%;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info .info-container{
+    margin: 15px 0 15px 0;
+} */
 
 /* back-up start */
 /* .about-me .title2{
