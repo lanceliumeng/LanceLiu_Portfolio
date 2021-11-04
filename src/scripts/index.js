@@ -14,4 +14,47 @@ $(document).ready(function () {
         // change humburger icon, this is not necessary, just for fun xD
         $('.menu-btn i').toggleClass('active');
     })
+    // owl-carousel script for blogs carousel
+    // https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
+    // https://owlcarousel2.github.io/OwlCarousel2/demos/responsive.html
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+            },
+            600: {
+                items: 2,
+                nav: false,
+            },
+            1000: {
+                items: 3,
+                nav: false,
+            }
+        },
+    }
+    );
+    // owl demo setup, not good in my case
+    // $('.owl-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     nav: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         600: {
+    //             items: 3
+    //         },
+    //         1000: {
+    //             items: 5
+    //         }
+    //     }
+    // })
+
 })

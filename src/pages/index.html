@@ -8,13 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LanceLiu Portfolio Website</title>
     <link rel="stylesheet" href="../styles/mainStyle.css">
+
     <!-- Font Awesome 5 for icons -->
     <!-- below link doesn't work for me cause CORS response header values are invalid -->
     <!-- https://github.com/FortAwesome/Font-Awesome/issues/9310 issue#9310 got solution! -->
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/ffb39d5850.js" crossorigin="anonymous"></script>
+
     <!-- for navbar animation -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- cdnjs waypoints, execute a function when scroll to an element -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- cdnjs owlCarousel2 touch enabled jQuery plugin that create beautiful responsive carousel slider. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/README.md -->
 
 </head>
 
@@ -29,8 +39,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#blogs">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -142,6 +152,7 @@
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title2">My Skills</h2>
+            <!-- my skills content start -->
             <div class="skills-content">
                 <div class="skills-column left-part">
                     <div class="text">My personality & creative skills</div>
@@ -197,16 +208,68 @@
                     <div class="bars">
                         <div class="info">
                             <span>Ruby</span>
-                            <span class="bar-text">15%</span>
+                            <span class="bar-text">5%</span>
                         </div>
                         <div class="progress-bar ruby"><span></span></div>
                     </div>
 
                 </div>
             </div>
+            <!-- my skills content end -->
+        </div>
     </section>
     <!-- Skills section end -->
 
+    <!-- Blog section start -->
+    <section class="blogs" id="blogs">
+        <div class="max-width">
+            <h2 class="title2">My Blogs</h2>
+            <div class="blogs-content owl-carousel">
+                <!-- blog contatiner 01 -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="../images/Blog-list-images/blog01-pokemon-pikachu.png" alt="blogPic01-pikachu">
+                        <div class="container-text">Blog Name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- blog contatiner 02 -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="../images/Blog-list-images/blog02-pokemon-Azumarill.png" alt="blogPic02-azumarill">
+                        <div class="container-text">Blog Name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- blog contatiner 03 -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="../images/Blog-list-images/blog03-pokemon-Bayleef.png" alt="blogPic03-Bayleef">
+                        <div class="container-text">Blog Name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- blog contatiner 04 -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="../images/Blog-list-images/blog04-pokemon-Bulbasaur.png" alt="blogPic04-Bulbasaur">
+                        <div class="container-text">Blog Name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- blog contatiner 05 -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="../images/Blog-list-images/blog05-pokemon-Charmander.png" alt="blogPic05-Charmander">
+                        <div class="container-text">Blog Name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Blog section end -->
     <script src="../scripts/index.js"></script>
     <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script> -->
 </body>

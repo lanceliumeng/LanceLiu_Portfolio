@@ -328,7 +328,7 @@ section#projects{
     left:50%;
     width: 180px;
     height: 3px;
-    background-color: black;
+    /* background-color: black; */
     transform: translateX(-50%);
     background-color: white;
 }
@@ -338,7 +338,7 @@ section#projects{
     bottom: -15px;
     left:50%;
     padding: 5px;
-    background-color: white;
+    /* background-color: white; */
     transform: translateX(-50%);
     font-size: 20px;
     color: #06cdfa;
@@ -571,20 +571,128 @@ section#skills{
     width:20%;
 }
 .skills .skills-content .right-part .bars .progress-bar.ruby span{
-    width:15%;
+    width:5%;
 }
-/* adjust progress-bar span content */
+/* adjust progress-bar span content, to make it looks like an arrow icon */
 .skills .skills-content .right-part .bars .progress-bar span::before{
     position: absolute;
     content: "";
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-top-color:black;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-color:black;
     right: 0;
-    top:-10px;
+    top:-8px;
+}
+
+/* My blogs section style start, h2 style is similar above */
+section#blogs{
+    padding: 100px 0;
+}
+.blogs{
+    font-family: 'Poppins',sans-serif;
+}
+/* for my blogs h2 */
+.blogs .title2{
+    position:relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size:40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+}
+.blogs .title2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color: white;
+}
+.blogs .title2::after{
+    content:'what i created';
+    position: absolute;
+    bottom: -15px;
+    left:50%;
+    padding: 5px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #06cdfa;
+    background-color: rgb(17,17,17);
+}
+.blogs{
+    background-color: rgb(17,17,17);
+    color: white;
+}
+/* #222224 #ee1515 #f00000 they are came from Pokeball Color Palette */
+/* for each whole container hover color change */
+.blogs .blogs-content .blog-container{
+    background-color: #222224;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.blogs .blogs-content .blog-container:hover{
+    background-color: #ee1515;
+}
+/* for each whole container hover, the container and each img size has a little bit change with scale */
+/* try to let each container looks like poke ball when it hover */
+.blogs .blogs-content .blog-container .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.blogs .blogs-content .blog-container:hover .container{
+    transform: scale(1.1);
+}
+.blogs .blogs-content .blog-container:hover img{
+    transform: scale(0.5);
+}
+
+.blogs .blogs-content .blog-container .container-text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+/* for each whole container hover, img border-color change */
+.blogs .blogs-content .blog-container img{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    /* object-fit: cover; css3 good point*/
+    border:5px solid #f00000;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.blogs .blogs-content .blog-container:hover img{
+    border-color:#222224;
+}
+/* change default owl dots style */ 
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    border: 2px solid #ee1515 !important;
+    height: 17px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+.owl-dot.active{
+    width: 28px;
+    border-radius: 14px;
+}
+.owl-dot.active,.owl-dot:hover{
+    background-color: #ee1515 !important;
 }
 
 /* responsive @media start */
@@ -708,7 +816,7 @@ section#skills{
         text-align: center;
         font-size: 28px;
     }
-    /* for easy way skill bars responsive control
+    /* for skill bars responsive control */
     .skills .skills-content .skills-column{
         width: 100%;
     }
@@ -718,7 +826,7 @@ section#skills{
     .skills .skills-content .right-part{
         margin-top: 30px;
     }
-} */
+}
 
 /* breakpoint5 */
 @media screen and (max-width:690px){
@@ -832,6 +940,10 @@ section#skills{
     .about-me .about-content .right .my-details span{
         font-size: 13px ;
         font-weight: 500;
+    }
+    .about-me .title2::after, .projects .title2::after, .skills .title2::after, .blogs .title2::after{
+        font-size: 15px;
+       
     }
 }
 
