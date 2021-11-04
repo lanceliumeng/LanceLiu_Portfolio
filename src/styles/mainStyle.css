@@ -538,7 +538,6 @@ section#skills{
 .skills .skills-content .right-part .bars .progress-bar span{
     height: 100%;
     width: 80%;
-    background-color: #06cdfa;
     position: absolute;
     border-radius: 5px;
     transform: scaleX(0);
@@ -554,24 +553,30 @@ section#skills{
         transform: scaleX(1);
     }
 }
-
+/* set color and width for bars */
 .skills .skills-content .right-part .bars .progress-bar.html span{
     width:70%;
+    background:linear-gradient(45deg,#1fe6ff,#673AB7);
 }
 .skills .skills-content .right-part .bars .progress-bar.css span{
     width:50%;
+    background:linear-gradient(45deg,#3bc0ff,#33ff00);
 }
 .skills .skills-content .right-part .bars .progress-bar.js span{
     width:40%;
+    background:linear-gradient(45deg,#ffee54,#ff00ca);
 }
 .skills .skills-content .right-part .bars .progress-bar.jQ span{
     width:20%;
+    background:linear-gradient(45deg,#22ffde,#2196f3);
 }
 .skills .skills-content .right-part .bars .progress-bar.mangoDB span{
     width:20%;
+    background:linear-gradient(45deg,#673ab7,#ff00ca);
 }
 .skills .skills-content .right-part .bars .progress-bar.ruby span{
     width:5%;
+    background:linear-gradient(45deg,#ffee54,#33ff00);
 }
 /* adjust progress-bar span content, to make it looks like an arrow icon */
 .skills .skills-content .right-part .bars .progress-bar span::before{
@@ -684,12 +689,12 @@ section#blogs{
     border: 2px solid white !important;
     height: 17px;
     width: 15px;
-    border-radius: 50%;
+    border-radius: 0;
     margin: 10px 5px;
 }
 .owl-dot.active{
-    width: 28px;
-    border-radius: 14px;
+    width: 25px;
+    border-radius: 0;
 }
 .owl-dot.active,.owl-dot:hover{
     background-color: #ee1515 !important;
