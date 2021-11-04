@@ -698,6 +698,7 @@ section#blogs{
 }
 .owl-dot.active,.owl-dot:hover{
     background-color: #ee1515 !important;
+    border-radius:10px
 }
 /* blog-btn control */
 .blogs a.blog-button{
