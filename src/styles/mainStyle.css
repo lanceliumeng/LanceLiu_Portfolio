@@ -469,54 +469,123 @@ section#skills{
     background: none;
     border: 2px solid #06cdfa;
 }
-
-.skills .skills-content .right-part .bars{
-    margin-bottom: 15px;
-}
+/* skill bars control in animation way */
 .skills .skills-content .right-part .info{
     display: flex;
     margin-bottom: 12px;
     justify-content: space-between;
     align-items: center;
 }
-.skills .skills-content .right-part .bars span{
-    font-weight: 500;
-    font-size: 16px;
+/* for skill bars content animation control */
+.skills .skills-content .right-part .info .bar-text{
+    opacity: 0;
+    animation-name: barTextShow01;
+    animation-duration: 0.5s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
-.skills .skills-content .right-part .bars .bar{
-    height: 5px;
-    width: 100%;
-    background-color: rgb(192, 192, 192);
-    position: relative;
-}
-.skills .skills-content .right-part .bars .bar::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    /* width: 80%; */
-    background-color: #06cdfa;
-    left: 0;
-    top: 0;
-}
-.skills-content .right-part .bars .html::before{
-    width:70%;
-}
-.skills-content .right-part .bars .css::before{
-    width:60%;
-}
-.skills-content .right-part .bars .js::before{
-    width:40%;
-}
-.skills-content .right-part .bars .jq::before{
-    width:30%;
-}
-.skills-content .right-part .bars .mangoDB::before{
-    width:20%;
-}
-.skills-content .right-part .bars .ruby::before{
-    width: 0%;
+@keyframes barTextShow01 {
+    100%{
+        opacity: 1;
+    } 
 }
 
+.skills .skills-content .right-part{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.skills .skills-content .right-part .bars{
+    margin: 20px 0;
+}
+.skills .skills-content .right-part .bars .info{
+    margin-bottom: 5px;
+}
+
+/* for skill bars info span content animation control */
+.skills .skills-content .right-part .bars .info span{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    animation-name: barTextShow02;
+    animation-duration: 0.5s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes barTextShow02 {
+    100%{
+        opacity: 1;
+    } 
+}
+/* for skill bars(grey bar + blue bar) animation control */
+.skills .skills-content .right-part .bars .progress-bar{
+    height: 10px;
+    width: 100%;
+    background-color: rgba(192, 192, 192,0.3);
+    position: relative;
+    transform: scaleX(0);
+    transform-origin:left;
+    animation-name: barMoving;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1,0,0.5,1);
+    animation-fill-mode: forwards;
+    /* cubic-bezier(<x1>, <y1>, <x2>, <y2>) */
+    /* https://easings.net/ this web has a lot of free use cubic-bezier */
+}
+.skills .skills-content .right-part .bars .progress-bar span{
+    height: 100%;
+    width: 80%;
+    background-color: #06cdfa;
+    position: absolute;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin:left;
+    animation-name: barMoving;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1,0,0.5,1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes barMoving {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.skills .skills-content .right-part .bars .progress-bar.html span{
+    width:70%;
+}
+.skills .skills-content .right-part .bars .progress-bar.css span{
+    width:50%;
+}
+.skills .skills-content .right-part .bars .progress-bar.js span{
+    width:40%;
+}
+.skills .skills-content .right-part .bars .progress-bar.jQ span{
+    width:20%;
+}
+.skills .skills-content .right-part .bars .progress-bar.mangoDB span{
+    width:20%;
+}
+.skills .skills-content .right-part .bars .progress-bar.ruby span{
+    width:15%;
+}
+/* adjust progress-bar span content */
+.skills .skills-content .right-part .bars .progress-bar span::before{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-color:black;
+    right: 0;
+    top:-10px;
+}
 
 /* responsive @media start */
 /* breakpoint1 */
@@ -639,7 +708,7 @@ section#skills{
         text-align: center;
         font-size: 28px;
     }
-    /* for skill bars responsive control */
+    /* for easy way skill bars responsive control
     .skills .skills-content .skills-column{
         width: 100%;
     }
@@ -649,7 +718,7 @@ section#skills{
     .skills .skills-content .right-part{
         margin-top: 30px;
     }
-}
+} */
 
 /* breakpoint5 */
 @media screen and (max-width:690px){
@@ -766,6 +835,85 @@ section#skills{
     }
 }
 
+
+/* .skills .skills-content .right-part .bars .progress-bar span::after{
+    position: absolute;
+    background-color: black;
+    color:white;
+    right: 0;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 6px;
+    top: -28px;
+    border-radius: 3px;
+}
+each bar span content
+.right-part .bars .progress-bar.html span::after{
+    content: "70%";
+}
+.right-part .bars .progress-bar.css span::after{
+    content: "60%";
+}
+.right-part .bars .progress-bar.js span::after{
+    content: "55%";
+}
+.right-part .bars .progress-bar.jQ span::after{
+    content: "30%";
+}
+.right-part .bars .progress-bar.mangoDB span::after{
+    content: "40%";
+}
+.right-part .bars .progress-bar.ruby span::after{
+    content: "30%";
+} */
+
+/* skill bars control in easy way no animation
+.skills .skills-content .right-part .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right-part .info{
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .skills-content .right-part .bars span{
+    font-weight: 500;
+    font-size: 16px;
+}
+.skills .skills-content .right-part .bars .bar{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    position: relative;
+}
+.skills .skills-content .right-part .bars .bar::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background-color: #06cdfa;
+    left: 0;
+    top: 0;
+}
+.skills-content .right-part .bars .html::before{
+    width:70%;
+}
+.skills-content .right-part .bars .css::before{
+    width:60%;
+}
+.skills-content .right-part .bars .js::before{
+    width:40%;
+}
+.skills-content .right-part .bars .jq::before{
+    width:30%;
+}
+.skills-content .right-part .bars .mangoDB::before{
+    width:20%;
+}
+.skills-content .right-part .bars .ruby::before{
+    width: 0%;
+} */
 
 /* for another way to make skill bars
 .bar-container {
