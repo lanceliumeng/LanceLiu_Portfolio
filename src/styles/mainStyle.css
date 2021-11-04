@@ -694,6 +694,28 @@ section#blogs{
 .owl-dot.active,.owl-dot:hover{
     background-color: #ee1515 !important;
 }
+/* blog-btn control */
+.blogs a.blog-button{
+    color: white;
+    text-align: center;
+    background-color:#ee1515;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-top: 15px;
+    position: absolute;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid #fa4006;
+    transition: all 0.3s ease;
+}
+.blogs a.blog-button:hover{
+    color: #06cdfa;
+    background: none;
+    border: 2px solid #06cdfa;
+} 
+
 
 /* responsive @media start */
 /* breakpoint1 */
