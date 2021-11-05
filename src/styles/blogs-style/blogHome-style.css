@@ -18,6 +18,11 @@ section#blog{
     align-items: center;
     padding: 40px;
     border: 1px solid rgba(0, 0, 0, 0.25);
+    background: url("/src/images/Blog-homePage-image/blogHome-background-image.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 div.blog-header{
@@ -27,15 +32,17 @@ div.blog-header{
     align-items: center;
     
 }
-
 section .blog-header span{
-    color: #fa4006 ;
-}
-section .blog-header h2{
-    font-size: 2rem;
-    color: #2b2b2b;
+    font-size: 2.5rem;
+    color: white;
     font-weight: 800;
 }
+section .blog-header h3{
+    color: #ffb000 ;
+    font-weight: 500;
+}
+
+
 section .blog-container{
     display: flex;
     justify-content: center;
@@ -50,6 +57,11 @@ section .blog-container .blog-box{
     border: 1px solid rgba(0, 0, 0, 0.25);
     margin: 20px;
     text-align: center;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+section .blog-container .blog-box:hover{
+    transform: scale(1.1);
 }
 
 section .blog-container .blog-box .blog-pic{
@@ -70,13 +82,13 @@ section .blog-container .blog-box .blog-text{
     flex-direction: column;
 }
 section .blog-container .blog-box .blog-text span{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: #fa4006;
 }
 
 section .blog-container .blog-box .blog-text a.blog-title{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #2b2b2b;
 }
@@ -91,7 +103,7 @@ section .blog-container .blog-box .blog-text a.blog-title:active{
 /* I want use the -webkit-line-clamp to allows limiting of the contents of blog container to the specified number of lines. */
 section .blog-container .blog-box .blog-text p.blog-intro{
     color: #595555;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp:2;
@@ -106,7 +118,7 @@ section .blog-container .blog-box .blog-text a.blog-detail-btn{
     background-color:#ee1515;
     padding: 8px 4px;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 1.5rem;
     font-weight: 500;
     border: 1px solid #fa4006;
     transition: all 0.3s ease;
@@ -124,7 +136,7 @@ section div.backHome-btn{
     border-radius: 10px;
     margin-left: 0;
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     border: 2px solid #ffb000;
     transition: all 0.3s ease;
@@ -134,10 +146,10 @@ section div.backHome-btn a{
 }
 section div.backHome-btn:hover{
     background: none;
-    border: 2px solid #2F86A6;
+    border: 2px solid white;
 }
 section div.backHome-btn a:hover{
-    color: black;
+    color: #ee1515;
 }
 
 /* responsive start */
