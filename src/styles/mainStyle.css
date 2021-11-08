@@ -860,6 +860,27 @@ section#contact{
     background: none;
     border: 2px solid #06cdfa;
 }
+
+/* =========footer style ========== */
+footer{
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+footer span a{
+    color: #06cdfa;
+    font-weight: 600;
+}
+footer span a:hover{
+    text-decoration: #ee1515 underline wavy;
+}
+footer span .fa-copyright{
+    color: #fa4006;
+}
+
+
 /* ------responsive @media start------ */
 /* ----breakpoint1----*/
 @media screen and (max-width:1300px){
@@ -1114,7 +1135,11 @@ section#contact{
        
     }
 }
-
+/* breakpoint 10 only for footer*/
+@media screen and (max-width:384px){
+     footer{
+        font-size: 12px;
+}
 
 /* .skills .skills-content .right-part .bars .progress-bar span::after{
     position: absolute;
