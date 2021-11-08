@@ -19,6 +19,16 @@ html{
     margin: auto;
 }
 
+/* for typed.js words animation style */
+#typed-01{
+    color: white;
+    text-shadow: -1px -1px 0 #06cdfa, 1px -1px 0 #06cdfa, -1px 1px 0 #06cdfa, 1px 1px 0 #06cdfa;
+}
+#typed-02{
+    color: white;
+    text-shadow: -1px -1px 0 #fa4006, 1px -1px 0 #fa4006, -1px 1px 0 #fa4006, 1px 1px 0 #fa4006; 
+}
+
 /* navbar style */
 .navbar {
     /* background-color: black; */
@@ -70,6 +80,7 @@ html{
 }
 
 .navbar .items li a {
+    display: block;
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -83,6 +94,35 @@ html{
 /* this is just for fun, when add class sticky, items hover color can change as well. */
 .navbar.sticky .items li a:hover{
     color:#06cdfa;
+}
+
+/* ======scroll button style====== */
+.scroll-btn{
+    position: fixed;
+    height: 43px;
+    width: 40px;
+    background-color: #fa4006;
+    right: 30px;
+    bottom:10px;
+    line-height:43px;
+    color:white;
+    font-size: 26px;
+    text-align: center;
+    z-index: 100;
+    border-radius:7px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+/* the below working call needs js DOM function,when sroll in some condition done, add the class */
+.scroll-btn.working{
+    opacity: 1;
+    pointer-events: auto;
+    bottom:30px;
+}
+.scroll-btn i{
+    padding-right: 5px;
 }
 
 /* menu btn style */
@@ -105,6 +145,7 @@ html{
     color:white;
     font-size: 23px;
     cursor: pointer;
+    display: none;
 }
 
 
@@ -1140,6 +1181,8 @@ footer span .fa-copyright{
      footer{
         font-size: 12px;
 }
+
+
 
 /* .skills .skills-content .right-part .bars .progress-bar span::after{
     position: absolute;

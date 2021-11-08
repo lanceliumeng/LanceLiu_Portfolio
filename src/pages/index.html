@@ -15,10 +15,11 @@
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <!-- ******Font Awesome 5 for icons****** -->
     <script src="https://kit.fontawesome.com/ffb39d5850.js" crossorigin="anonymous"></script>
-
+    <!-- ********for intro-self words typing animation script--A jQuery typing animation script******* -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <!-- *******for navbar animation******* ==========-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <!-- *********for blog list cards script start!******** -->
     <!-- *****cdnjs waypoints, execute a function when scroll to an element,in this case, for blog cards*****-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- ****cdnjs owlCarousel2 touch enabled jQuery plugin that create beautiful responsive carousel slider.**** -->
@@ -26,7 +27,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- ****https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/README.md**** -->
-
+    <!-- *********for blog list cards script end!******** -->
 </head>
 <!-- ******for my website icon start****** -->
 <link rel="apple-touch-icon" sizes="180x180" href="/src/images/favicon_io/apple-touch-icon.png">
@@ -36,6 +37,12 @@
 <!-- ******for my website icon end ******* -->
 
 <body>
+    <!-- ===========scroll button start:=========== -->
+    <div class="scroll-btn">
+        <i class="fas fa-paper-plane"></i>
+    </div>
+    <!-- ===========scroll button end=========== -->
+
     <!-- ===========navbar start:=========== -->
     <nav class="navbar">
         <div class="max-width">
@@ -43,12 +50,12 @@
             <div class="logo"><a href="#">Lance<span>liu.</span></a></div>
             <!-- ----navbar items, home, skills etc--- -->
             <ul class="items">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#blogs">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about-me" class="menu-btn">About</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#blogs" class="menu-btn">Blog</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <!-- ---class name came from Font Awesome 5, i create my own icon---- -->
@@ -64,7 +71,7 @@
             <div class="home-content">
                 <div class="text-1">Greeting,my name is</div>
                 <div class="text-2">Lance Liu</div>
-                <div class="text-3">And I'm a <span>Web Developer</span></div>
+                <div class="text-3">And I'm a <span class="typing-01" id="typed-01"></span></div>
                 <a class="hire-btn" href="https://youtu.be/5a3KOyfkF7g" target="_blank">Dance With Me</a>
                 <div>
                     <a class="link linkone" href="https://github.com/lanceliumeng" target="_blank"><i
@@ -90,7 +97,7 @@
                 </div>
                 <!-- -----about me right content----- -->
                 <div class="content right">
-                    <div class="text">I'm Lance Liu and I am a <span>Web Developer</span> </div>
+                    <div class="text">I'm Lance Liu and I am a <span class="typing-02" id="typed-02"></span> </div>
                     <p>When I stepped into web development from other industries half-year ago, I fell in love with this
                         profession. I like thinking and coding. I am keen to be a team number and work with different
                         developers. In my option, they are the kindest people I have ever met before.</p>
@@ -294,7 +301,7 @@
             <div class="contact-content">
                 <!-- -------contact content left part------- -->
                 <div class="contact-column left-part">
-                    <div class="text">Communicate with me</div>
+                    <div class="text">Welcome to contact me</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, cupiditate laboriosam vitae
                         veniam quasi tenetur consectetur, quod libero amet ullam accusantium tempora, voluptatibus dicta
                         officia voluptatum commodi est blanditiis. Ratione.</p>
@@ -328,7 +335,7 @@
                 </div>
                 <!-- -------contact content right part------- -->
                 <div class="contact-column right-part">
-                    <div class="text">Welcome to contact me</div>
+                    <div class="text">Get In Touch</div>
                     <!-- ****formspree Simple Contact Form start**** -->
                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
                         action="https://formspree.io/f/xzbylolr" method="post">
