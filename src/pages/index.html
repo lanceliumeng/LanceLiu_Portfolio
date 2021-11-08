@@ -9,33 +9,34 @@
     <title>LanceLiu Portfolio Website</title>
     <link rel="stylesheet" href="../styles/mainStyle.css">
 
-    <!-- Font Awesome 5 for icons -->
+
     <!-- below link doesn't work for me cause CORS response header values are invalid -->
     <!-- https://github.com/FortAwesome/Font-Awesome/issues/9310 issue#9310 got solution! -->
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <!-- ******Font Awesome 5 for icons****** -->
     <script src="https://kit.fontawesome.com/ffb39d5850.js" crossorigin="anonymous"></script>
 
-    <!-- =====for navbar animation ==========-->
+    <!-- *******for navbar animation******* ==========-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- ===cdnjs waypoints, execute a function when scroll to an element====== -->
+    <!-- *****cdnjs waypoints, execute a function when scroll to an element,in this case, for blog cards*****-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <!-- ====cdnjs owlCarousel2 touch enabled jQuery plugin that create beautiful responsive carousel slider.========= -->
+    <!-- ****cdnjs owlCarousel2 touch enabled jQuery plugin that create beautiful responsive carousel slider.**** -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <!-- ====https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/README.md============ -->
+    <!-- ****https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/README.md**** -->
 
 </head>
-<!-- ---------for my website icon start-------- -->
+<!-- ******for my website icon start****** -->
 <link rel="apple-touch-icon" sizes="180x180" href="/src/images/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/src/images/favicon_io/site.webmanifest">
-<!-- --------- for my website icon end -------- -->
+<!-- ******for my website icon end ******* -->
 
 <body>
-    <!-- ------------navbar start:--------------- -->
+    <!-- ===========navbar start:=========== -->
     <nav class="navbar">
         <div class="max-width">
             <!-- -------self logo in div, also use span tag. can let me control them separately------ -->
@@ -55,16 +56,16 @@
             </div>
         </div>
     </nav>
-    <!-- ---------------navbar end----------------  -->
+    <!-- ===========navbar end============ -->
 
-    <!-- home section start： -->
+    <!-- ===========home section start：=========== -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Greeting,my name is</div>
                 <div class="text-2">Lance Liu</div>
                 <div class="text-3">And I'm a <span>Web Developer</span></div>
-                <a class="hire-btn" href="#">Dance With Me</a>
+                <a class="hire-btn" href="https://youtu.be/5a3KOyfkF7g" target="_blank">Dance With Me</a>
                 <div>
                     <a class="link linkone" href="https://github.com/lanceliumeng" target="_blank"><i
                             class="fab fa-github-square"></i>
@@ -75,53 +76,55 @@
             </div>
         </div>
     </section>
-    <!-- home section end: -->
+    <!-- ===========home section end:=========== -->
 
-    <!-- About Me section start -->
+    <!-- ===========About Me section start=========== -->
     <section class="about-me" id="about-me">
         <div class="max-width">
             <h2 class="title2">My Biography</h2>
-            <!-- about-me whole content start -->
+            <!-- ------about-me whole content start------ -->
             <div class="about-content">
-                <!-- left content -->
+                <!-- -----about me left content---- -->
                 <div class="content left">
                     <img src="../images/self-image/my_photo.jpg" alt="selfPic-800px.jpg">
                 </div>
-                <!-- right content -->
+                <!-- -----about me right content----- -->
                 <div class="content right">
                     <div class="text">I'm Lance Liu and I am a <span>Web Developer</span> </div>
                     <p>When I stepped into web development from other industries half-year ago, I fell in love with this
                         profession. I like thinking and coding. I am keen to be a team number and work with different
                         developers. In my option, they are the kindest people I have ever met before.</p>
                     <div class="my-details">
+                        <!-- --right part detail in right content-- -->
                         <div class="right-part">
                             <ul>
                                 <li><span>Name:</span> Lance Liu</li>
-                                <li><span>Phone:</span> 0455945083</li>
+                                <li><span>Phone:</span> 0455xxxxxx</li>
                             </ul>
                         </div>
+                        <!-- --left part detail in right content-- -->
                         <div class="left-part">
                             <ul>
-                                <li class="email"><span>Email:</span> lanceliumeng89@gmail.com</li>
+                                <li class="email"><span>Email:</span> lololololo@gmail.com</li>
                                 <li><span>location:</span> Melbourne</li>
                             </ul>
                         </div>
                     </div>
+                    <!-- -----button in right content---- -->
                     <a class="cv-btn" href="#">Explore CV</a>
                 </div>
             </div>
-            <!-- about-me whole content end -->
         </div>
     </section>
-    <!-- About Me section end -->
+    <!-- ===========About Me section end ===========-->
 
-    <!-- My Project section start -->
+    <!-- ===========My Project section start=========== -->
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title2">My Projects</h2>
-            <!-- my projects content start -->
+            <!-- -------my projects content start-------- -->
             <div class="projects-content">
-                <!-- my project card 1 -->
+                <!-- ---my project card 1--- -->
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-tasks"></i>
@@ -130,7 +133,7 @@
                             Panel</a>
                     </div>
                 </div>
-                <!-- my project card 2 -->
+                <!-- ---my project card 2--- -->
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-project-diagram"></i>
@@ -139,7 +142,7 @@
                             Museum</a>
                     </div>
                 </div>
-                <!-- my project card 3 -->
+                <!-- ---my project card 3--- -->
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-file-code"></i>
@@ -149,18 +152,19 @@
                     </div>
                 </div>
             </div>
-            <!-- my projects content end -->
+            <!-- ---------my projects content end--------- -->
         </div>
     </section>
-    <!-- My Project section end -->
+    <!-- ===========My Project section end=========== -->
 
-    <!-- Skills section start -->
+    <!-- ===========Skills section start=========== -->
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title2">My Skills</h2>
-            <!-- my skills content start -->
+            <!-- ------my skills content start----- -->
             <div class="skills-content">
                 <div class="skills-column left-part">
+                    <!-- ----left part content----- -->
                     <div class="text">My personality & creative skills</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deleniti iure repellat
                         officia quasi, perspiciatis velit perferendis, totam facere accusantium doloremque cumque
@@ -171,6 +175,8 @@
                     <a href="#">Explore more</a>
                 </div>
                 <div class="skills-column right-part">
+                    <!-- ----right part content----- -->
+                    <!-- --skill bar 01-- -->
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
@@ -178,7 +184,7 @@
                         </div>
                         <div class="progress-bar html"><span></span></div>
                     </div>
-
+                    <!-- --skill bar 02-- -->
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
@@ -186,7 +192,7 @@
                         </div>
                         <div class="progress-bar css"><span></span></div>
                     </div>
-
+                    <!-- --skill bar 03-- -->
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
@@ -194,7 +200,7 @@
                         </div>
                         <div class="progress-bar js"><span></span></div>
                     </div>
-
+                    <!-- --skill bar 04-- -->
                     <div class="bars">
                         <div class="info">
                             <span>jQuery</span>
@@ -202,7 +208,7 @@
                         </div>
                         <div class="progress-bar jQ"><span></span></div>
                     </div>
-
+                    <!-- --skill bar 05-- -->
                     <div class="bars">
                         <div class="info">
                             <span>MangoDB</span>
@@ -210,7 +216,7 @@
                         </div>
                         <div class="progress-bar mangoDB"><span></span></div>
                     </div>
-
+                    <!-- --skill bar 06-- -->
                     <div class="bars">
                         <div class="info">
                             <span>Ruby</span>
@@ -221,17 +227,17 @@
 
                 </div>
             </div>
-            <!-- my skills content end -->
+            <!-- ===========my skills content end=========== -->
         </div>
     </section>
-    <!-- Skills section end -->
+    <!-- ===========Skills section end=========== -->
 
-    <!-- Blog section start -->
+    <!-- ===========Blog section start=========== -->
     <section class="blogs" id="blogs">
         <div class="max-width">
             <h2 class="title2">My Blogs</h2>
             <div class="blogs-content owl-carousel">
-                <!-- blog contatiner 01 -->
+                <!-- -------blog contatiner 01-------- -->
                 <div class="blog-container item">
                     <div class="container">
                         <img src="../images/Blog-list-images/blog01-pokemon-pikachu.png" alt="blogPic01-pikachu">
@@ -239,7 +245,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
                     </div>
                 </div>
-                <!-- blog contatiner 02 -->
+                <!-- -------blog contatiner 02------- -->
                 <div class="blog-container item">
                     <div class="container">
                         <img src="../images/Blog-list-images/blog02-pokemon-Azumarill.png" alt="blogPic02-azumarill">
@@ -247,7 +253,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
                     </div>
                 </div>
-                <!-- blog contatiner 03 -->
+                <!-- -------blog contatiner 03------- -->
                 <div class="blog-container item">
                     <div class="container">
                         <img src="../images/Blog-list-images/blog03-pokemon-Bayleef.png" alt="blogPic03-Bayleef">
@@ -255,7 +261,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
                     </div>
                 </div>
-                <!-- blog contatiner 04 -->
+                <!-- -------blog contatiner 04------- -->
                 <div class="blog-container item">
                     <div class="container">
                         <img src="../images/Blog-list-images/blog04-pokemon-Bulbasaur.png" alt="blogPic04-Bulbasaur">
@@ -263,7 +269,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
                     </div>
                 </div>
-                <!-- blog contatiner 05 -->
+                <!-- -------blog contatiner 05------- -->
                 <div class="blog-container item">
                     <div class="container">
                         <img src="../images/Blog-list-images/blog05-pokemon-Charmander.png" alt="blogPic05-Charmander">
@@ -271,16 +277,98 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
                     </div>
                 </div>
-                <!-- 5 blog contatiners end -->
+
             </div>
+            <!-- ------blog section button------- -->
             <div>
                 <a class="blog-button" href="/src/pages/blog pages/blogHome-page.html">Explore more</a>
             </div>
         </div>
     </section>
-    <!-- Blog section end -->
+    <!-- ===========Blog section end=========== -->
 
+    <!-- ===========Contact section start=========== -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title2">Contact Me</h2>
+            <div class="contact-content">
+                <!-- -------contact content left part------- -->
+                <div class="contact-column left-part">
+                    <div class="text">Communicate with me</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, cupiditate laboriosam vitae
+                        veniam quasi tenetur consectetur, quod libero amet ullam accusantium tempora, voluptatibus dicta
+                        officia voluptatum commodi est blanditiis. Ratione.</p>
+                    <!-- ---left part icons and contact details----->
+                    <div class="icons">
+                        <!-- -icon 01- -->
+                        <div class="row">
+                            <i class="fas fa-laugh-wink"></i>
+                            <div class="info">
+                                <div class="head">Name:</div>
+                                <div class="subtitle">Lance Liu</div>
+                            </div>
+                        </div>
+                        <!-- -icon 02- -->
+                        <div class="row">
+                            <i class="fas fa-search-location"></i>
+                            <div class="info">
+                                <div class="head">Address:</div>
+                                <div class="subtitle">xxx,xxxx,Melbourne,Vic,AU</div>
+                            </div>
+                        </div>
+                        <!-- -icon 03- -->
+                        <div class="row">
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="info">
+                                <div class="head">Email:</div>
+                                <div class="subtitle">lololololo@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- -------contact content right part------- -->
+                <div class="contact-column right-part">
+                    <div class="text">Welcome to contact me</div>
+                    <!-- ****formspree Simple Contact Form start**** -->
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/xzbylolr" method="post">
+                        <div class="fields">
+                            <!-- -field 01 Name- -->
+                            <div class="field name">
+                                <label for="full-name"></label>
+                                <input type="text" name="name" id="full-name" placeholder="First and Last Name"
+                                    required="">
+                            </div>
+                            <!-- -field 02 email- -->
+                            <div class="field email">
+                                <label for="email-address"></label>
+                                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com"
+                                    required="">
+                            </div>
+                        </div>
+                        <!-- -field 03 textarea- -->
+                        <div class="field textarea">
+                            <label for="message"></label>
+                            <textarea cols="30" rows="10" name="message" id="message"
+                                placeholder="Please put your msg here" required=""></textarea>
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        </div>
+                        <!-- -form button- -->
+                        <div class="button">
+                            <button type="submit" value="Submit">Send message</button>
+                        </div>
+                    </form>
+                    <!-- ****formspree Simple Contact Form end**** -->
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===========Footer section start=========== -->
+
+    <!-- ===========Footer section end=========== -->
+
+    <!-- *******js script for my portfolio page*******-->
     <script src="../scripts/index.js"></script>
     <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script> -->
 </body>
