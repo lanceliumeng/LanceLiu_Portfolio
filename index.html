@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lance Liu Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanceLiu Portfolio Website</title>
+    <link rel="stylesheet" href="/src/styles/mainStyle.css">
+
+
+    <!-- below link doesn't work for me cause CORS response header values are invalid -->
+    <!-- https://github.com/FortAwesome/Font-Awesome/issues/9310 issue#9310 got solution! -->
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <!-- ******Font Awesome 5 for icons****** -->
+    <script src="https://kit.fontawesome.com/ffb39d5850.js" crossorigin="anonymous"></script>
+    <!-- ********for intro-self words typing animation script--A jQuery typing animation script******* -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- *******for navbar animation******* ==========-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- *********for blog list cards script start!******** -->
+    <!-- *****cdnjs waypoints, execute a function when scroll to an element,in this case, for blog cards*****-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- ****cdnjs owlCarousel2 touch enabled jQuery plugin that create beautiful responsive carousel slider.**** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- ****https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/README.md**** -->
+    <!-- *********for blog list cards script end!******** -->
+</head>
+<!-- ******for my website icon start****** -->
+<link rel="apple-touch-icon" sizes="180x180" href="/src/images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/src/images/favicon_io/site.webmanifest">
+<!-- ******for my website icon end ******* -->
+
+<body>
+    <!-- ===========scroll button start:=========== -->
+    <div class="scroll-btn">
+        <i class="fas fa-paper-plane"></i>
+    </div>
+    <!-- ===========scroll button end=========== -->
+
+    <!-- ===========navbar start:=========== -->
+    <nav class="navbar">
+        <div class="max-width">
+            <!-- -------self logo in div, also use span tag. can let me control them separately------ -->
+            <div class="logo"><a href="#">Lance<span>liu.</span></a></div>
+            <!-- ----navbar items, home, skills etc--- -->
+            <ul class="items">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about-me" class="menu-btn">About</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#blogs" class="menu-btn">Blog</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <!-- ---class name came from Font Awesome 5, i create my own icon---- -->
+                <i class="fas fa-space-shuttle"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========navbar end============ -->
+
+    <!-- ===========home section start：=========== -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Greeting,my name is</div>
+                <div class="text-2">Lance Liu</div>
+                <div class="text-3">And I'm a <span class="typing-01" id="typed-01"></span></div>
+                <a class="hire-btn" href="https://youtu.be/5a3KOyfkF7g" target="_blank">Dance With Me</a>
+                <div>
+                    <a class="link linkone" href="https://github.com/lanceliumeng" target="_blank"><i
+                            class="fab fa-github-square"></i>
+                        <span class="text">Github</span></a>
+                    <a class="link linktwo" href="https://www.linkedin.com/in/meng-liu-03397220b" target="_blank"><i
+                            class="fab fa-linkedin"></i> <span class="text">LinkedIn</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========home section end:=========== -->
+
+    <!-- ===========About Me section start=========== -->
+    <section class="about-me" id="about-me">
+        <div class="max-width">
+            <h2 class="title2">My Biography</h2>
+            <!-- ------about-me whole content start------ -->
+            <div class="about-content">
+                <!-- -----about me left content---- -->
+                <div class="content left">
+                    <img src="/src/images/self-image/my_photo.jpg" alt="selfPic-800px.jpg">
+                </div>
+                <!-- -----about me right content----- -->
+                <div class="content right">
+                    <div class="text">I'm Lance Liu and I am a <span class="typing-02" id="typed-02"></span> </div>
+                    <p>When I stepped into web development from other industries half-year ago, I fell in love with this
+                        profession. I like thinking and coding. I am keen to be a team number and work with different
+                        developers. In my option, they are the kindest people I have ever met before.</p>
+                    <div class="my-details">
+                        <!-- --right part detail in right content-- -->
+                        <div class="right-part">
+                            <ul>
+                                <li><span>Name:</span> Lance Liu</li>
+                                <li><span>Phone:</span> 0455xxxxxx</li>
+                            </ul>
+                        </div>
+                        <!-- --left part detail in right content-- -->
+                        <div class="left-part">
+                            <ul>
+                                <li class="email"><span>Email:</span> lololololo@gmail.com</li>
+                                <li><span>location:</span> Melbourne</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- -----button in right content---- -->
+                    <a class="cv-btn" href="#">Explore CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========About Me section end ===========-->
+
+    <!-- ===========My Project section start=========== -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title2">My Projects</h2>
+            <!-- -------my projects content start-------- -->
+            <div class="projects-content">
+                <!-- ---my project card 1--- -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-tasks"></i>
+                        <div class="text">Project I</div>
+                        <a href="/src/pages/projects-pages/project-one.html" target="_blank">this is my project 1, it
+                            name is Price
+                            Panel</a>
+                    </div>
+                </div>
+                <!-- ---my project card 2--- -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-project-diagram"></i>
+                        <div class="text">Project II</div>
+                        <a href="/src/pages/projects-pages/project-two.html" target="_blank">this is my project 2, it
+                            name is Candy
+                            Museum</a>
+                    </div>
+                </div>
+                <!-- ---my project card 3--- -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-file-code"></i>
+                        <div class="text">Project III</div>
+                        <a href="/src/pages/projects-pages/project-three.html" target="_blank">this is my project 3,it
+                            name is
+                            Score Keeper</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------my projects content end--------- -->
+        </div>
+    </section>
+    <!-- ===========My Project section end=========== -->
+
+    <!-- ===========Skills section start=========== -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title2">My Skills</h2>
+            <!-- ------my skills content start----- -->
+            <div class="skills-content">
+                <div class="skills-column left-part">
+                    <!-- ----left part content----- -->
+                    <div class="text">My personality & creative skills</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deleniti iure repellat
+                        officia quasi, perspiciatis velit perferendis, totam facere accusantium doloremque cumque
+                        assumenda aperiam molestias. Dignissimos itaque in soluta corporis consectetur eveniet
+                        numquam beatae nam labore cupiditate aut quidem distinctio praesentium, aperiam quasi
+                        nesciunt maxime delectus provident doloribus at rerum excepturi voluptas perspiciatis
+                        fugiat. Ab eveniet autem aperiam consequuntur eius.</p>
+                    <a href="#">Explore more</a>
+                </div>
+                <div class="skills-column right-part">
+                    <!-- ----right part content----- -->
+                    <!-- --skill bar 01-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span class="bar-text">70%</span>
+                        </div>
+                        <div class="progress-bar html"><span></span></div>
+                    </div>
+                    <!-- --skill bar 02-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span class="bar-text">50%</span>
+                        </div>
+                        <div class="progress-bar css"><span></span></div>
+                    </div>
+                    <!-- --skill bar 03-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span class="bar-text">40%</span>
+                        </div>
+                        <div class="progress-bar js"><span></span></div>
+                    </div>
+                    <!-- --skill bar 04-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>jQuery</span>
+                            <span class="bar-text">20%</span>
+                        </div>
+                        <div class="progress-bar jQ"><span></span></div>
+                    </div>
+                    <!-- --skill bar 05-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>MangoDB</span>
+                            <span class="bar-text">20%</span>
+                        </div>
+                        <div class="progress-bar mangoDB"><span></span></div>
+                    </div>
+                    <!-- --skill bar 06-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>Ruby</span>
+                            <span class="bar-text">5%</span>
+                        </div>
+                        <div class="progress-bar ruby"><span></span></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ===========my skills content end=========== -->
+        </div>
+    </section>
+    <!-- ===========Skills section end=========== -->
+
+    <!-- ===========Blog section start=========== -->
+    <section class="blogs" id="blogs">
+        <div class="max-width">
+            <h2 class="title2">My Blogs</h2>
+            <div class="blogs-content owl-carousel">
+                <!-- -------blog contatiner 01-------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog01-pokemon-pikachu.png" alt="blogPic01-pikachu">
+                        <div class="container-text">Pikachu Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 02------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog02-pokemon-Azumarill.png" alt="blogPic02-azumarill">
+                        <div class="container-text">Azumarill Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 03------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog03-pokemon-Bayleef.png" alt="blogPic03-Bayleef">
+                        <div class="container-text">Bayleef Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 04------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog04-pokemon-Bulbasaur.png" alt="blogPic04-Bulbasaur">
+                        <div class="container-text">Bulbasaur Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 05------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog05-pokemon-Charmander.png"
+                            alt="blogPic05-Charmander">
+                        <div class="container-text">Charman Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ------blog section button------- -->
+            <div>
+                <a class="blog-button" href="/src/pages/blog pages/blogHome-page.html" target="_blank">Explore more</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Blog section end=========== -->
+
+    <!-- ===========Contact section start=========== -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title2">Contact Me</h2>
+            <div class="contact-content">
+                <!-- -------contact content left part------- -->
+                <div class="contact-column left-part">
+                    <div class="text">Welcome to contact me</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, cupiditate laboriosam vitae
+                        veniam quasi tenetur consectetur, quod libero amet ullam accusantium tempora, voluptatibus dicta
+                        officia voluptatum commodi est blanditiis. Ratione.</p>
+                    <!-- ---left part icons and contact details----->
+                    <div class="icons">
+                        <!-- -icon 01- -->
+                        <div class="row">
+                            <i class="fas fa-laugh-wink"></i>
+                            <div class="info">
+                                <div class="head">Name:</div>
+                                <div class="subtitle">Lance Liu</div>
+                            </div>
+                        </div>
+                        <!-- -icon 02- -->
+                        <div class="row">
+                            <i class="fas fa-search-location"></i>
+                            <div class="info">
+                                <div class="head">Address:</div>
+                                <div class="subtitle">xxx,xxxx,Melbourne,Vic,AU</div>
+                            </div>
+                        </div>
+                        <!-- -icon 03- -->
+                        <div class="row">
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="info">
+                                <div class="head">Email:</div>
+                                <div class="subtitle">lololololo@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- -------contact content right part------- -->
+                <div class="contact-column right-part">
+                    <div class="text">Get In Touch</div>
+                    <!-- ****formspree Simple Contact Form start**** -->
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/xzbylolr" method="post">
+                        <div class="fields">
+                            <!-- -field 01 Name- -->
+                            <div class="field name">
+                                <label for="full-name"></label>
+                                <input type="text" name="name" id="full-name" placeholder="First and Last Name"
+                                    required="">
+                            </div>
+                            <!-- -field 02 email- -->
+                            <div class="field email">
+                                <label for="email-address"></label>
+                                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com"
+                                    required="">
+                            </div>
+                        </div>
+                        <!-- -field 03 textarea- -->
+                        <div class="field textarea">
+                            <label for="message"></label>
+                            <textarea cols="30" rows="10" name="message" id="message"
+                                placeholder="Please put your msg here" required=""></textarea>
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        </div>
+                        <!-- -form button- -->
+                        <div class="button">
+                            <button type="submit" value="Submit">Send message</button>
+                        </div>
+                    </form>
+                    <!-- ****formspree Simple Contact Form end**** -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========Footer section start=========== -->
+    <footer>
+        <span>Created By <a href="#home">LanceLiu</a> | <span class="far fa-copyright"></span>All Rights
+            Reserved</span>
+    </footer>
+    <!-- ===========Footer section end=========== -->
+
+    <!-- *******js script for my portfolio page*******-->
+    <script src="/src/scripts/index.js"></script>
+    <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script> -->
+</body>
+
+</html>
+
+<!-- another way to create skill bars -->
+<!-- <div class="info-container">
+    <span>HTML</span>
+    <div class="bar-container">
+        <div class="skill html">80%</div>
+    </div>
+</div>
+<div class="info-container">
+    <span>CSS</span>
+    <div class="bar-container">
+        <div class="skill css">60%</div>
+    </div>
+</div>
+<div class="info-container">
+    <span>JavaScript</span>
+    <div class="bar-container">
+        <div class="skill js">40%</div>
+    </div>
+</div> -->
