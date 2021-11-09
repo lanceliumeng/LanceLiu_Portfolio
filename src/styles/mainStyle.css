@@ -306,7 +306,7 @@ section#about-me{
 
 .about-me .about-content .right p{
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .about-me .about-content .right .my-details{
@@ -324,7 +324,7 @@ section#about-me{
     font-weight: 500;
 }
 .about-me .about-content .right .my-details ul li{
-    margin: 10px 0 20px 0 ;
+    margin: 5px 0 ;
 }
 
 /* Resume btn control, same as hire-btn */
@@ -951,12 +951,12 @@ footer span .fa-copyright{
     }
     
 }
-@media screen and (min-width:994px) and (max-width:1166px){
+/* @media screen and (min-width:994px) and (max-width:1166px){
 .about-me .about-content .right .my-details .left-part .email{
         margin-top: 0;
     }
-}
-/* breakpoint 4 for projects layout */
+} */
+/* breakpoint 3 for projects layout */
 @media screen and (max-width:1040px){
     .projects .projects-content .card{
         width: calc(50% - 10px);
@@ -964,14 +964,14 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint3 */
+/* breakpoint4 */
 @media screen and (max-width:994px){
     /* adjust navbar logo & items vertical 0, horizontal 50px */
     .max-width {
         padding:0 50px;
     }
 }
-/* breakpoint4 */
+/* breakpoint5 */
 /* when screen max size and downwards, in my case, less than or equal to 947px */
 @media screen and (max-width:947px){
     /* z-index defines the stack level of the box in the current context, depends the number size */
@@ -1064,7 +1064,7 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint5 */
+/* breakpoint6 */
 @media screen and (max-width:690px){
     .max-width {
         padding:0 30px;
@@ -1089,13 +1089,13 @@ footer span .fa-copyright{
         width: 100%;
     }
 }
-/* breakpoint6 only adjust for about-me list */
-@media screen and (max-width:610px){
+/* breakpoint7 only adjust for about-me list */
+/* @media screen and (max-width:610px){
     .about-me .about-content .right .my-details .left-part .email{
         margin-top: 0;
     }
-}
-/* breakpoint7 only adjust for about-me list */
+} */
+/* breakpoint8 only adjust for about-me list */
 @media screen and (max-width:458px){
     .home .home-content .link .text{
         display: none;
@@ -1125,7 +1125,7 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint8 */
+/* breakpoint9 */
 @media screen and (max-width:410px){
     .home .home-content .text-2 {
         font-size: 45px;
@@ -1142,7 +1142,7 @@ footer span .fa-copyright{
         font-weight: 600;
     }
 }
-/* breakpoint9 */
+/* breakpoint10 */
 @media screen and (max-width:350px) {
     .home .home-content .text-2 {
         font-size: 28px;
@@ -1179,7 +1179,7 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint 10 only for all title2 and footer*/
+/* breakpoint 11 only for all title2 and footer*/
 @media screen and (max-width:384px){
     .about-me .title2::after, 
     .projects .title2::after, 
