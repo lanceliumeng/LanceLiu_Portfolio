@@ -19,7 +19,7 @@ html{
     margin: auto;
 }
 
-/* for typed.js words animation style */
+/* for typed.js words animation style,****hollow font***** */
 #typed-01{
     color: white;
     text-shadow: -1px -1px 0 #06cdfa, 1px -1px 0 #06cdfa, -1px 1px 0 #06cdfa, 1px 1px 0 #06cdfa;
@@ -921,7 +921,13 @@ footer span .fa-copyright{
     color: #fa4006;
 }
 
-
+@media screen and (min-width:1301px){
+    .home .max-width,
+    .navbar .max-width {
+        margin-left: 0;
+    }
+   
+}
 /* ------responsive @media start------ */
 /* ----breakpoint1----*/
 @media screen and (max-width:1300px){
@@ -1171,19 +1177,24 @@ footer span .fa-copyright{
         font-size: 13px ;
         font-weight: 500;
     }
-    .about-me .title2::after, .projects .title2::after, .skills .title2::after, .blogs .title2::after{
-        font-size: 15px;
-       
-    }
 }
-/* breakpoint 10 only for footer*/
+
+/* breakpoint 10 only for all title2 and footer*/
 @media screen and (max-width:384px){
+    .about-me .title2::after, 
+    .projects .title2::after, 
+    .skills .title2::after, 
+    .blogs .title2::after,
+    .contact .title2::after {
+    font-size: 15px;
+    margin-bottom:5px;
+}
      footer{
         font-size: 12px;
 }
 
 
-
+/* back-up start */
 /* .skills .skills-content .right-part .bars .progress-bar span::after{
     position: absolute;
     background-color: black;
@@ -1299,7 +1310,6 @@ each bar span content
     margin: 15px 0 15px 0;
 } */
 
-/* back-up start */
 /* .about-me .title2{
     position: relative;
     font-family: 'Ubuntu',sans-serif;
