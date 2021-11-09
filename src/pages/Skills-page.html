@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Lance Liu Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LanceLiu Portfolio Home Page</title>
+    <title>LanceLiu Portfolio Skills Page</title>
     <link rel="stylesheet" href="/src/styles/mainStyle.css">
 
 
@@ -50,12 +50,10 @@
             <div class="logo"><a href="#">Lance<span>liu.</span></a></div>
             <!-- ----navbar items, home, skills etc--- -->
             <ul class="items">
-                <!-- ***https://stackoverflow.com/questions/17687328/getting-a-link-to-go-to-a-specific-section-on-another-page*** -->
-                <!-- **the above stack overlink let me know how to use HTML5 Getting a link to go to a specific section on another page** -->
-                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="/index.html#home" class="menu-btn">Home</a></li>
                 <li><a href="/src/pages/About-page.html#about-me" class="menu-btn">About</a></li>
                 <li><a href="/src/pages/Project-page.html#projects" class="menu-btn">Projects</a></li>
-                <li><a href="/src/pages/Skills-page.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="/src/pages/Blog-page.html#blogs" class="menu-btn">Blog</a></li>
                 <li><a href="/src/pages/Contact-page.html#contact" class="menu-btn">Contact</a></li>
             </ul>
@@ -87,6 +85,81 @@
     </section>
     <!-- ===========home section end:=========== -->
 
+    <!-- ===========Skills section start=========== -->
+    <section class="skills" id="skills" name="skills">
+        <div class="max-width">
+            <h2 class="title2">My Skills</h2>
+            <!-- ------my skills content start----- -->
+            <div class="skills-content">
+                <div class="skills-column left-part">
+                    <!-- ----left part content----- -->
+                    <div class="text">My personality & creative skills</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deleniti iure repellat
+                        officia quasi, perspiciatis velit perferendis, totam facere accusantium doloremque cumque
+                        assumenda aperiam molestias. Dignissimos itaque in soluta corporis consectetur eveniet
+                        numquam beatae nam labore cupiditate aut quidem distinctio praesentium, aperiam quasi
+                        nesciunt maxime delectus provident doloribus at rerum excepturi voluptas perspiciatis
+                        fugiat. Ab eveniet autem aperiam consequuntur eius.</p>
+                    <a href="#">Explore more</a>
+                </div>
+                <div class="skills-column right-part">
+                    <!-- ----right part content----- -->
+                    <!-- --skill bar 01-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span class="bar-text">70%</span>
+                        </div>
+                        <div class="progress-bar html"><span></span></div>
+                    </div>
+                    <!-- --skill bar 02-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span class="bar-text">50%</span>
+                        </div>
+                        <div class="progress-bar css"><span></span></div>
+                    </div>
+                    <!-- --skill bar 03-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span class="bar-text">40%</span>
+                        </div>
+                        <div class="progress-bar js"><span></span></div>
+                    </div>
+                    <!-- --skill bar 04-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>jQuery</span>
+                            <span class="bar-text">20%</span>
+                        </div>
+                        <div class="progress-bar jQ"><span></span></div>
+                    </div>
+                    <!-- --skill bar 05-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>MangoDB</span>
+                            <span class="bar-text">20%</span>
+                        </div>
+                        <div class="progress-bar mangoDB"><span></span></div>
+                    </div>
+                    <!-- --skill bar 06-- -->
+                    <div class="bars">
+                        <div class="info">
+                            <span>Ruby</span>
+                            <span class="bar-text">5%</span>
+                        </div>
+                        <div class="progress-bar ruby"><span></span></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ===========my skills content end=========== -->
+        </div>
+    </section>
+    <!-- ===========Skills section end=========== -->
+
     <!-- ===========Footer section start=========== -->
     <footer>
         <span>Created By <a href="#home">LanceLiu</a> | <span class="far fa-copyright"></span>All Rights
@@ -100,23 +173,3 @@
 </body>
 
 </html>
-
-<!-- another way to create skill bars -->
-<!-- <div class="info-container">
-    <span>HTML</span>
-    <div class="bar-container">
-        <div class="skill html">80%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>CSS</span>
-    <div class="bar-container">
-        <div class="skill css">60%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>JavaScript</span>
-    <div class="bar-container">
-        <div class="skill js">40%</div>
-    </div>
-</div> -->

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Lance Liu Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LanceLiu Portfolio Home Page</title>
+    <title>LanceLiu Portfolio Blog Page</title>
     <link rel="stylesheet" href="/src/styles/mainStyle.css">
 
 
@@ -50,13 +50,11 @@
             <div class="logo"><a href="#">Lance<span>liu.</span></a></div>
             <!-- ----navbar items, home, skills etc--- -->
             <ul class="items">
-                <!-- ***https://stackoverflow.com/questions/17687328/getting-a-link-to-go-to-a-specific-section-on-another-page*** -->
-                <!-- **the above stack overlink let me know how to use HTML5 Getting a link to go to a specific section on another page** -->
-                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="/index.html#home" class="menu-btn">Home</a></li>
                 <li><a href="/src/pages/About-page.html#about-me" class="menu-btn">About</a></li>
                 <li><a href="/src/pages/Project-page.html#projects" class="menu-btn">Projects</a></li>
                 <li><a href="/src/pages/Skills-page.html#skills" class="menu-btn">Skills</a></li>
-                <li><a href="/src/pages/Blog-page.html#blogs" class="menu-btn">Blog</a></li>
+                <li><a href="#blogs" class="menu-btn">Blog</a></li>
                 <li><a href="/src/pages/Contact-page.html#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -87,6 +85,69 @@
     </section>
     <!-- ===========home section end:=========== -->
 
+
+
+
+
+
+
+    <!-- ===========Blog section start=========== -->
+    <section class="blogs" id="blogs" name="blogs">
+        <div class="max-width">
+            <h2 class="title2">My Blogs</h2>
+            <div class="blogs-content owl-carousel">
+                <!-- -------blog contatiner 01-------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog01-pokemon-pikachu.png" alt="blogPic01-pikachu">
+                        <div class="container-text">Pikachu Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 02------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog02-pokemon-Azumarill.png" alt="blogPic02-azumarill">
+                        <div class="container-text">Azumarill Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 03------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog03-pokemon-Bayleef.png" alt="blogPic03-Bayleef">
+                        <div class="container-text">Bayleef Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 04------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog04-pokemon-Bulbasaur.png" alt="blogPic04-Bulbasaur">
+                        <div class="container-text">Bulbasaur Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+                <!-- -------blog contatiner 05------- -->
+                <div class="blog-container item">
+                    <div class="container">
+                        <img src="/src/images/Blog-list-images/blog05-pokemon-Charmander.png"
+                            alt="blogPic05-Charmander">
+                        <div class="container-text">Charman Blog</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ------blog section button------- -->
+            <div>
+                <a class="blog-button" href="/src/pages/blog pages/blogHome-page.html" target="_blank">Explore more</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Blog section end=========== -->
+
+
     <!-- ===========Footer section start=========== -->
     <footer>
         <span>Created By <a href="#home">LanceLiu</a> | <span class="far fa-copyright"></span>All Rights
@@ -94,29 +155,10 @@
     </footer>
     <!-- ===========Footer section end=========== -->
 
-    <!-- *******js script for my portfolio page*******-->
-    <script src="/src/scripts/index.js"></script>
+    <!-- *******js script for my Blog page*******-->
+    <!-- can not share with index js Script cause one tag missing -->
+    <script src="/src/scripts/blogPage-script/blogPage.js"></script>
     <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script> -->
 </body>
 
 </html>
-
-<!-- another way to create skill bars -->
-<!-- <div class="info-container">
-    <span>HTML</span>
-    <div class="bar-container">
-        <div class="skill html">80%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>CSS</span>
-    <div class="bar-container">
-        <div class="skill css">60%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>JavaScript</span>
-    <div class="bar-container">
-        <div class="skill js">40%</div>
-    </div>
-</div> -->

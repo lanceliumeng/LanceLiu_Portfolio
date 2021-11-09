@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Lance Liu Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LanceLiu Portfolio Home Page</title>
+    <title>LanceLiu Portfolio Project Page</title>
     <link rel="stylesheet" href="/src/styles/mainStyle.css">
 
 
@@ -50,11 +50,9 @@
             <div class="logo"><a href="#">Lance<span>liu.</span></a></div>
             <!-- ----navbar items, home, skills etc--- -->
             <ul class="items">
-                <!-- ***https://stackoverflow.com/questions/17687328/getting-a-link-to-go-to-a-specific-section-on-another-page*** -->
-                <!-- **the above stack overlink let me know how to use HTML5 Getting a link to go to a specific section on another page** -->
-                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="/index.html#home" class="menu-btn">Home</a></li>
                 <li><a href="/src/pages/About-page.html#about-me" class="menu-btn">About</a></li>
-                <li><a href="/src/pages/Project-page.html#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
                 <li><a href="/src/pages/Skills-page.html#skills" class="menu-btn">Skills</a></li>
                 <li><a href="/src/pages/Blog-page.html#blogs" class="menu-btn">Blog</a></li>
                 <li><a href="/src/pages/Contact-page.html#contact" class="menu-btn">Contact</a></li>
@@ -87,6 +85,48 @@
     </section>
     <!-- ===========home section end:=========== -->
 
+    <!-- ===========My Project section start=========== -->
+    <section class="projects" id="projects" name="projects">
+        <div class="max-width">
+            <h2 class="title2">My Projects</h2>
+            <!-- -------my projects content start-------- -->
+            <div class="projects-content">
+                <!-- ---my project card 1--- -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-tasks"></i>
+                        <div class="text">Project I</div>
+                        <a href="/src/pages/projects-pages/project-one.html" target="_blank">this is my project 1, it
+                            name is Price
+                            Panel</a>
+                    </div>
+                </div>
+                <!-- ---my project card 2--- -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-project-diagram"></i>
+                        <div class="text">Project II</div>
+                        <a href="/src/pages/projects-pages/project-two.html" target="_blank">this is my project 2, it
+                            name is Candy
+                            Museum</a>
+                    </div>
+                </div>
+                <!-- ---my project card 3--- -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-file-code"></i>
+                        <div class="text">Project III</div>
+                        <a href="/src/pages/projects-pages/project-three.html" target="_blank">this is my project 3,it
+                            name is
+                            Score Keeper</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------my projects content end--------- -->
+        </div>
+    </section>
+    <!-- ===========My Project section end=========== -->
+
     <!-- ===========Footer section start=========== -->
     <footer>
         <span>Created By <a href="#home">LanceLiu</a> | <span class="far fa-copyright"></span>All Rights
@@ -100,23 +140,3 @@
 </body>
 
 </html>
-
-<!-- another way to create skill bars -->
-<!-- <div class="info-container">
-    <span>HTML</span>
-    <div class="bar-container">
-        <div class="skill html">80%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>CSS</span>
-    <div class="bar-container">
-        <div class="skill css">60%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>JavaScript</span>
-    <div class="bar-container">
-        <div class="skill js">40%</div>
-    </div>
-</div> -->

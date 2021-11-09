@@ -35,8 +35,6 @@ $(document).ready(function () {
         loop: true,
     };
     let typedOne = new Typed('.typing-01', options);
-    let typedTwo = new Typed('.typing-02', options);
-
 
     // ===========owl-carousel script for blogs carousel==========
     // https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
@@ -63,7 +61,6 @@ $(document).ready(function () {
         },
     }
     );
-
     // owl website demo example setup, not good in my case
     // $('.owl-carousel').owlCarousel({
     //     loop: true,
@@ -82,4 +79,4 @@ $(document).ready(function () {
     //     }
     // })
 
-});
+})

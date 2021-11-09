@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Lance Liu Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LanceLiu Portfolio Home Page</title>
+    <title>LanceLiu Portfolio About Me Page</title>
     <link rel="stylesheet" href="/src/styles/mainStyle.css">
 
 
@@ -50,10 +50,8 @@
             <div class="logo"><a href="#">Lance<span>liu.</span></a></div>
             <!-- ----navbar items, home, skills etc--- -->
             <ul class="items">
-                <!-- ***https://stackoverflow.com/questions/17687328/getting-a-link-to-go-to-a-specific-section-on-another-page*** -->
-                <!-- **the above stack overlink let me know how to use HTML5 Getting a link to go to a specific section on another page** -->
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="/src/pages/About-page.html#about-me" class="menu-btn">About</a></li>
+                <li><a href="/index.html#home" class="menu-btn">Home</a></li>
+                <li><a href="#about-me" class="menu-btn">About</a></li>
                 <li><a href="/src/pages/Project-page.html#projects" class="menu-btn">Projects</a></li>
                 <li><a href="/src/pages/Skills-page.html#skills" class="menu-btn">Skills</a></li>
                 <li><a href="/src/pages/Blog-page.html#blogs" class="menu-btn">Blog</a></li>
@@ -87,6 +85,46 @@
     </section>
     <!-- ===========home section end:=========== -->
 
+    <!-- ===========About Me section start=========== -->
+    <section class="about-me" id="about-me" name="about-me">
+        <div class="max-width">
+            <h2 class="title2">My Biography</h2>
+            <!-- ------about-me whole content start------ -->
+            <div class="about-content">
+                <!-- -----about me left content---- -->
+                <div class="content left">
+                    <img src="/src/images/self-image/my_photo.jpg" alt="selfPic-800px.jpg">
+                </div>
+                <!-- -----about me right content----- -->
+                <div class="content right">
+                    <div class="text">I'm Lance Liu and I am a <span class="typing-02" id="typed-02"></span> </div>
+                    <p>When I stepped into web development from other industries half-year ago, I fell in love with this
+                        profession. I like thinking and coding. I am keen to be a team number and work with different
+                        developers. In my option, they are the kindest people I have ever met before.</p>
+                    <div class="my-details">
+                        <!-- --right part detail in right content-- -->
+                        <div class="right-part">
+                            <ul>
+                                <li><span>Name:</span> Lance Liu</li>
+                                <li><span>Phone:</span> 0455xxxxxx</li>
+                            </ul>
+                        </div>
+                        <!-- --left part detail in right content-- -->
+                        <div class="left-part">
+                            <ul>
+                                <li class="email"><span>Email:</span> lololololo@gmail.com</li>
+                                <li><span>location:</span> Melbourne</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- -----button in right content---- -->
+                    <a class="cv-btn" href="/src/pages/My-resume-page/Lance Liu-Web Developer-Resume.pdf">Explore CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========About Me section end ===========-->
+
     <!-- ===========Footer section start=========== -->
     <footer>
         <span>Created By <a href="#home">LanceLiu</a> | <span class="far fa-copyright"></span>All Rights
@@ -100,23 +138,3 @@
 </body>
 
 </html>
-
-<!-- another way to create skill bars -->
-<!-- <div class="info-container">
-    <span>HTML</span>
-    <div class="bar-container">
-        <div class="skill html">80%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>CSS</span>
-    <div class="bar-container">
-        <div class="skill css">60%</div>
-    </div>
-</div>
-<div class="info-container">
-    <span>JavaScript</span>
-    <div class="bar-container">
-        <div class="skill js">40%</div>
-    </div>
-</div> -->
