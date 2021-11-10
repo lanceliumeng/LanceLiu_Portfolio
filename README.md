@@ -27,23 +27,23 @@
 ## Sitemap
 ![alt text](./docs/sitemap.png "my portfolio website sitemap")
 
-## Workfram
-* ![alt text](./docs/Portfolio_Workframe_PNG/Home-Page.png "home-page")
-* ![alt text](./docs/Portfolio_Workframe_PNG/About-Me.png "aboutMe-page")
-* ![alt text](./docs/Portfolio_Workframe_PNG/My-Project.png "project-page")
-* ![alt text](./docs/Portfolio_Workframe_PNG/Skills.png "skills-page")
-* ![alt text](./docs/Portfolio_Workframe_PNG/Blogs "blogList-page")
-* ![alt text](./docs/Portfolio_Workframe_PNG/Contact.png "contact-page")
+## <i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i> Workfram
+![alt text](./docs/Portfolio_Workframe_PNG/Home-Page.png "home-page")
+![alt text](./docs/Portfolio_Workframe_PNG/About-Me.png "aboutMe-page")
+![alt text](./docs/Portfolio_Workframe_PNG/My-Project.png "project-page")
+![alt text](./docs/Portfolio_Workframe_PNG/Skills.png "skills-page")
+![alt text](./docs/Portfolio_Workframe_PNG/Blogs "blogList-page")
+![alt text](./docs/Portfolio_Workframe_PNG/Contact.png "contact-page")
 
 ## Screenshots
-* ![alt text](./docs/Portfolio-Screenshots/homePage.jpeg "home-page")
-* ![alt text](./docs/Portfolio-Screenshots/aboutMePage.png "aboutMe-page")
-* ![alt text](./docs/Portfolio-Screenshots/projectListPage.png "project-page")
-* ![alt text](./docs/Portfolio-Screenshots/skillsPage.png "skills-page")
-* ![alt text](./docs/Portfolio-Screenshots/blogListPage.png"blogList-page")
-* ![alt text](./docs/Portfolio-Screenshots/contactPage.png "contact-page")
-* ![alt text](./docs/Portfolio-Screenshots/mobile-tabletView01.png "responsiveView-page")
-* ![alt text](./docs/Portfolio-Screenshots/mobile-tabletView02.png "responsiveView-page")
+![alt text](./docs/Portfolio-Screenshots/homePage.jpeg "home-page")
+![alt text](./docs/Portfolio-Screenshots/aboutMePage.png "aboutMe-page")
+![alt text](./docs/Portfolio-Screenshots/projectListPage.png "project-page")
+![alt text](./docs/Portfolio-Screenshots/skillsPage.png "skills-page")
+![alt text](./docs/Portfolio-Screenshots/blogListPage.png "blogList-page")
+![alt text](./docs/Portfolio-Screenshots/contactPage.png "contact-page")
+![alt text](./docs/Portfolio-Screenshots/mobile-tabletView01.png "responsiveView-page")
+![alt text](./docs/Portfolio-Screenshots/mobile-tabletView02.png "responsiveView-page")
 
 ## Target audience
 **Potential employer, Peers developer or anyone interests about my portfolio**
