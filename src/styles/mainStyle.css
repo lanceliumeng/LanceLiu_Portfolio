@@ -1,6 +1,7 @@
+/* =========google font link ========= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-/* ----- css reset just for this case ----- */
+/* ======== css reset just for this case ======== */
 * {
     margin: 0;
     padding:0;
@@ -12,14 +13,14 @@ html{
     scroll-behavior: smooth;
 }
 
-/* for control all sections max width */
+/* ========for control all sections max width with max-width class========= */
 .max-width {
     max-width: 1300px;
     padding:0 80px;
     margin: auto;
 }
 
-/* for typed.js words animation style,****hollow font***** */
+/* ==========for typed.js words animation style,****hollow font***** ==========*/
 #typed-01{
     color: white;
     text-shadow: -1px -1px 0 #06cdfa, 1px -1px 0 #06cdfa, -1px 1px 0 #06cdfa, 1px 1px 0 #06cdfa;
@@ -29,7 +30,7 @@ html{
     text-shadow: -1px -1px 0 #fa4006, 1px -1px 0 #fa4006, -1px 1px 0 #fa4006, 1px 1px 0 #fa4006; 
 }
 
-/* navbar style */
+/* =========navbar style========== */
 .navbar {
     /* background-color: black; */
     position: fixed;
@@ -38,10 +39,11 @@ html{
     font-family: 'Ubuntu', sans-serif;
     transition:all 0.3s ease;
     z-index: 2;
-    /* let navbar beyond about me title when scroll down */
+    /* let navbar beyond each component when scroll down,*/
+    /* Overlapping elements with a larger z-index cover those with a smaller one. In this case, others z-index is 0 */
 }
 
-/* for DOM js function add or move the class => navbar */
+/* ------for DOM js function add or remove the sticky class => navbar------- */
 .navbar.sticky{
     padding:15px 0;
     background:black;
@@ -61,15 +63,15 @@ html{
 .navbar .logo a span {
     color:#fa4006;
     transition:all 0.3s ease;
+    /* ----make sure logo has the same transition value as navbar----- */
 }
-/* for DOM js function add or move the class => Logo */
-/* make sure logo has the same transition value as navbar */
+/* --------for DOM js function add or move the class => Logo------ */
 .navbar.sticky .logo a span {
     color: white;
 }
 
-/* this is just for fun, when add class sticky, my logo hover color can change as well. */
-.navbar.sticky .logo a span:hover{
+/* @@@@@this is just for fun, when add sticky class, my logo span color can change as well.@@@@@ */
+.navbar.sticky .logo a span{
     color:#06cdfa;
 }
 
@@ -86,12 +88,12 @@ html{
     font-weight: 600;
     margin-left: 25px ;
     transition: color 0.3 ease;
-    /* can not be 0.5s, looks like a little bit lagge */
+    /* !!!!can not be 0.5s, looks like a little bit lagge!!!!! */
 }
 .navbar .items li a:hover{
     color:#fa4006 ;
 }
-/* this is just for fun, when add class sticky, items hover color can change as well. */
+/* @@@@@this is just for fun, when add class sticky, items hover color can change.@@@@@ */
 .navbar.sticky .items li a:hover{
     color:#06cdfa;
 }
@@ -115,7 +117,7 @@ html{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-/* the below working call needs js DOM function,when sroll in some condition done, add the class */
+/* ----the below working class needs js DOM function,when sroll meet some conditions, add the class---- */
 .scroll-btn.working{
     opacity: 1;
     pointer-events: auto;
@@ -125,7 +127,7 @@ html{
     padding-right: 5px;
 }
 
-/* menu btn style */
+/* ---menu btn style---- */
 .menu-btn {
     font-size:23px;
     cursor: pointer;
@@ -135,12 +137,12 @@ html{
 .menu-btn i:hover {
     color:#fa4006 ;
 }
-/* this is just for fun, when add class sticky, btn hover color can change as well. */
+/* @@@@this is just for fun, when add class sticky, btn hover color can change as well.@@@@ */
 .menu-btn.sticky i:hover{
     color:#06cdfa;
 }
 
-/* menu button style */
+/* ----menu button style----- */
 .menu-btn {
     color:white;
     font-size: 23px;
@@ -149,7 +151,7 @@ html{
 }
 
 
-/* home section style */
+/* =========home section style========= */
 .home {
     display: flex;
     background: url("/src/images/home-page-background-image/home-page-final.jpeg");
@@ -204,7 +206,7 @@ html{
     background: none;
     border: 2px solid #06cdfa;
 }
-/* add hand icon for hire-btn, cannot show the icon at beginning,found solution below */
+/* !!!!!add hand icon for hire-btn, cannot show the icon at beginning,found solution below!!!!!! */
 /* https://stackoverflow.com/questions/49754892/font-awesome-5-on-pseudo-elements-shows-square-instead-of-icon */
 .home .home-content .hire-btn:after{
     font-family: 'Font Awesome 5 Free';
@@ -212,7 +214,7 @@ html{
     font-weight: 800;
     padding: 0 5px;
 }
-/* only for links styles */
+/* ----only for links styles---- */
 .home .home-content .link{
     display: inline-block;
     text-align: center;
@@ -232,7 +234,7 @@ html{
     border: 2px solid #06cdfa;
 }
 
-/* about-me section style */
+/* ===============about-me section style============== */
 section#about-me{
     padding: 100px 0;
 }
@@ -270,26 +272,26 @@ section#about-me{
     font-size: 20px;
     color: #fa4006;
 }
-/* about me section flex box control */
+/* -----about me section flex box control----- */
 .about-me .about-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-
+/* -----about me left part----- */
 .about-me .about-content .left img{
     width:400px;
     height: 400px;
     border-radius: 6px ;
-    /* object-fit: scale-down; in this case, don't need it */
+    /* object-fit: scale-down; in this case, don't need it,I used Canva to adjust the pic */
     /* The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container. */
 }
 
 .about-me .about-content .left{
     width: 45%;
 }
-
+/* -----about me right part----- */
 .about-me .about-content .right{
     width: 55%;
 }
@@ -313,7 +315,7 @@ section#about-me{
     display: flex;
     justify-content: space-between;
 }
-/* about me list control */
+/* --about me right part list control-- */
 .about-me .about-content .right .my-details ul{
     list-style: none;
     font-size: 20px ;
@@ -327,7 +329,7 @@ section#about-me{
     margin: 5px 0 ;
 }
 
-/* Resume btn control, same as hire-btn */
+/* ---Resume btn control, same as hire-btn--- */
 .about-me .about-content .right .cv-btn{
     display: inline-block;
     background:#fa4006;
@@ -346,14 +348,14 @@ section#about-me{
     border: 2px solid #06cdfa;
 }
 
-/* My projects section style, h2 style similar as about-me part */
+/* ===========My projects section style, h2 style similar as about-me part========== */
 section#projects{
     padding: 100px 0;
 }
 .projects {
     font-family: 'Poppins',sans-serif;
 }
-/* for projects h2 */
+/* ----for projects h2----*/
 .projects .title2{
     position:relative;
     font-family: 'Ubuntu',sans-serif;
@@ -390,7 +392,7 @@ section#projects{
     background-color: rgb(17,17,17);
     color: white;
 }
-/* for projects 3 cards content */
+/* ---for projects 3 cards content--- */
 .projects .projects-content{
     display:flex;
     flex-wrap: wrap;
@@ -398,7 +400,7 @@ section#projects{
     justify-content: space-between;
 }
 /* https://developers.google.com/web/updates/2012/03/CSS-layout-gets-smarter-with-calc */
-/* calc() property is easy to layout  */
+/* !!!!calc() property is easy to layout!!!!!  */
 .projects .projects-content .card{
     background-color: rgb(34,34,34);
     width:calc(33% - 20px);
@@ -437,14 +439,14 @@ section#projects{
     color: #06fa90f2;
 }
 
-/* My Skills section style start, h2 style is similar above */
+/* ===========My Skills section style start, h2 style is similar above======== */
 section#skills{
     padding: 100px 0;
 }
 .skills{
     font-family: 'Poppins',sans-serif;
 }
-/* for about-me h2 */
+/* ----for skills h2---- */
 .skills .title2{
     position:relative;
     font-family: 'Ubuntu',sans-serif;
@@ -475,7 +477,7 @@ section#skills{
     font-size: 20px;
     color: #fa4006;
 }
-/* skills section flex box control */
+/* -----skills section flex box control----- */
 .skills .skills-content{
     display:flex;
     flex-wrap: wrap;
@@ -485,6 +487,7 @@ section#skills{
 .skills .skills-content .skills-column{
     width: calc(50% - 30px);
 }
+/* --skills section left part-- */
 .skills .skills-content .left-part .text{
     font-size: 18px;
     font-weight: 600;
@@ -493,7 +496,7 @@ section#skills{
 .skills .skills-content .left-part p{
     text-align: justify;
 }
-/* explore more btn control */
+/* ----explore more btn control---- */
 .skills .skills-content .left-part a{
     display: inline-block;
     background:#fa4006;
@@ -511,14 +514,15 @@ section#skills{
     background: none;
     border: 2px solid #06cdfa;
 }
-/* skill bars control in animation way */
+/* --skills section right part-- */
+/* !!!!skill bars control in animation way!!!!!*/
 .skills .skills-content .right-part .info{
     display: flex;
     margin-bottom: 12px;
     justify-content: space-between;
     align-items: center;
 }
-/* for skill bars content animation control */
+/* !!!!!for skill bars content animation control!!!!!! */
 .skills .skills-content .right-part .info .bar-text{
     opacity: 0;
     animation-name: barTextShow01;
@@ -546,7 +550,7 @@ section#skills{
     margin-bottom: 5px;
 }
 
-/* for skill bars info span content animation control */
+/* !!!!!for skill bars info span content animation control!!!!! */
 .skills .skills-content .right-part .bars .info span{
     font-size: 16px;
     font-weight: 500;
@@ -562,7 +566,7 @@ section#skills{
         opacity: 1;
     } 
 }
-/* for skill bars(grey bar + blue bar) animation control */
+/* !!!!!for skill bars(behind bar + front bar) animation control!!!!! */
 .skills .skills-content .right-part .bars .progress-bar{
     height: 10px;
     width: 100%;
@@ -574,7 +578,7 @@ section#skills{
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(1,0,0.5,1);
     animation-fill-mode: forwards;
-    /* cubic-bezier(<x1>, <y1>, <x2>, <y2>) */
+    /* cubic-bezier(<x1>, <y1>, <x2>, <y2>) have tried a lot, not good in this case */
     /* https://easings.net/ this web has a lot of free use cubic-bezier */
 }
 .skills .skills-content .right-part .bars .progress-bar span{
@@ -595,7 +599,7 @@ section#skills{
         transform: scaleX(1);
     }
 }
-/* set color and width for bars */
+/* ---set color and width for bars---- */
 .skills .skills-content .right-part .bars .progress-bar.html span{
     width:70%;
     background:linear-gradient(45deg,#1fe6ff,#673AB7);
@@ -610,7 +614,7 @@ section#skills{
 }
 .skills .skills-content .right-part .bars .progress-bar.jQ span{
     width:20%;
-    background:linear-gradient(45deg,#22ffde,#2196f3);
+    background:linear-gradient(45deg,#3f87a6, #ebf8e1, #f69d3c);
 }
 .skills .skills-content .right-part .bars .progress-bar.mangoDB span{
     width:20%;
@@ -618,9 +622,9 @@ section#skills{
 }
 .skills .skills-content .right-part .bars .progress-bar.ruby span{
     width:5%;
-    background:linear-gradient(45deg,#ffee54,#33ff00);
+    background:linear-gradient(45deg,#e66465, #9198e5);
 }
-/* adjust progress-bar span content, to make it looks like an arrow icon */
+/* ----adjust progress-bar span, to make it looks like an arrow icon---- */
 .skills .skills-content .right-part .bars .progress-bar span::before{
     position: absolute;
     content: "";
@@ -634,14 +638,14 @@ section#skills{
     top:-8px;
 }
 
-/* My blogs section style start, h2 style is similar above */
+/* ==========My blogs section style start, h2 style is similar above======== */
 section#blogs{
     padding: 100px 0;
 }
 .blogs{
     font-family: 'Poppins',sans-serif;
 }
-/* for my blogs h2 */
+/* ---for my blogs h2---- */
 .blogs .title2{
     position:relative;
     font-family: 'Ubuntu',sans-serif;
@@ -677,7 +681,7 @@ section#blogs{
     color: white;
 }
 /* #222224 #ee1515 #f00000 they are came from Pokeball Color Palette */
-/* for each whole container hover color change */
+/* ---for each whole container hover color change--- */
 .blogs .blogs-content .blog-container{
     background-color: #222224;
     border-radius: 6px;
@@ -688,8 +692,8 @@ section#blogs{
 .blogs .blogs-content .blog-container:hover{
     background-color: #ee1515;
 }
-/* for each whole container hover, the container and each img size has a little bit change with scale */
-/* try to let each container looks like poke ball when it hover */
+/* --for each whole container hover, the container and each img size has a little bit change with scale-- */
+/* @@@@@try to let each container looks like poke ball when it hover@@@@@ */
 .blogs .blogs-content .blog-container .container{
     display:flex;
     flex-direction: column;
@@ -709,7 +713,7 @@ section#blogs{
     font-weight: 500;
     margin: 10px 0;
 }
-/* for each whole container hover, img border-color change */
+/* --for each whole container hover, img border-color change-- */
 .blogs .blogs-content .blog-container img{
     width: 150px;
     height: 150px;
@@ -722,7 +726,7 @@ section#blogs{
 .blogs .blogs-content .blog-container:hover img{
     border-color:#222224;
 }
-/* change default owl dots style */ 
+/* !!!!change default owl dots style!!!! */ 
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -742,7 +746,7 @@ section#blogs{
     background-color: #ee1515 !important;
     border-radius:10px
 }
-/* blog-btn control */
+/* ---blog-btn control---- */
 .blogs a.blog-button{
     color: white;
     text-align: center;
@@ -764,7 +768,7 @@ section#blogs{
     border: 2px solid #06cdfa;
 } 
 
-/* =========contact me section style ========== */
+/* =============contact me section style ============== */
 section#contact{
     padding: 100px 0;
 }
@@ -857,6 +861,7 @@ section#contact{
     width: 100%;
     margin-bottom: 40px;
 }
+/* I used formspree format for my contact form, but I changed the default layout and style */
 .contact .contact-content .contact-column.right-part .field input,
 .contact .contact-content .contact-column.right-part .field.textarea textarea{
     height: 100%;
@@ -921,6 +926,9 @@ footer span .fa-copyright{
     color: #fa4006;
 }
 
+
+/* ------responsive @media start------ */
+/* ----breakpoint1 for navbar and my home intro layout,just need adjust margin a little----*/
 @media screen and (min-width:1301px){
     .home .max-width,
     .navbar .max-width {
@@ -928,8 +936,6 @@ footer span .fa-copyright{
     }
    
 }
-/* ------responsive @media start------ */
-/* ----breakpoint1----*/
 @media screen and (max-width:1300px){
     .home .max-width {
         margin-left: 0;
@@ -951,12 +957,8 @@ footer span .fa-copyright{
     }
     
 }
-/* @media screen and (min-width:994px) and (max-width:1166px){
-.about-me .about-content .right .my-details .left-part .email{
-        margin-top: 0;
-    }
-} */
-/* breakpoint 3 for projects layout */
+
+/* -----breakpoint 3 for projects layout----- */
 @media screen and (max-width:1040px){
     .projects .projects-content .card{
         width: calc(50% - 10px);
@@ -964,14 +966,14 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint4 */
+/* -----breakpoint4---- */
 @media screen and (max-width:994px){
     /* adjust navbar logo & items vertical 0, horizontal 50px */
     .max-width {
         padding:0 50px;
     }
 }
-/* breakpoint5 */
+/* -----breakpoint5----- */
 /* when screen max size and downwards, in my case, less than or equal to 947px */
 @media screen and (max-width:947px){
     /* z-index defines the stack level of the box in the current context, depends the number size */
@@ -1064,7 +1066,7 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint6 */
+/* -----breakpoint6---- */
 @media screen and (max-width:690px){
     .max-width {
         padding:0 30px;
@@ -1084,18 +1086,12 @@ footer span .fa-copyright{
         padding: 5px 10px;
         font-weight: 400;
     }
-           /* 2nd breakpoint for projects content */
     .projects .projects-content .card{
         width: 100%;
     }
 }
-/* breakpoint7 only adjust for about-me list */
-/* @media screen and (max-width:610px){
-    .about-me .about-content .right .my-details .left-part .email{
-        margin-top: 0;
-    }
-} */
-/* breakpoint8 only adjust for about-me list */
+
+/* -----breakpoint7 only adjust for about-me list----- */
 @media screen and (max-width:458px){
     .home .home-content .link .text{
         display: none;
@@ -1125,7 +1121,7 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint9 */
+/* -----breakpoint8----- */
 @media screen and (max-width:410px){
     .home .home-content .text-2 {
         font-size: 45px;
@@ -1142,7 +1138,7 @@ footer span .fa-copyright{
         font-weight: 600;
     }
 }
-/* breakpoint10 */
+/* ------breakpoint9------ */
 @media screen and (max-width:350px) {
     .home .home-content .text-2 {
         font-size: 28px;
@@ -1179,7 +1175,7 @@ footer span .fa-copyright{
     }
 }
 
-/* breakpoint 11 only for all title2 and footer*/
+/* ------breakpoint 10 only for all title2 and footer-------*/
 @media screen and (max-width:384px){
     .about-me .title2::after, 
     .projects .title2::after, 
@@ -1325,5 +1321,17 @@ each bar span content
     margin-bottom: 60px;
     padding-bottom: 20px;
     text-decoration: #fa4006 wavy underline;
+} */
+
+/* @media screen and (min-width:994px) and (max-width:1166px){
+.about-me .about-content .right .my-details .left-part .email{
+        margin-top: 0;
+    }
+} */
+/* ------breakpoint7 only adjust for about-me list------ */
+/* @media screen and (max-width:610px){
+    .about-me .about-content .right .my-details .left-part .email{
+        margin-top: 0;
+    }
 } */
 /* back up ends */
