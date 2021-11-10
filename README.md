@@ -12,7 +12,7 @@
 ## Description of my portfolio website, including,
 
 ### Purpose
-**This portfolio website will help me to find a web developer job.**  
+**This portfolio website will help me to find a web developer job. :grin:**  
 *In addition,I will keep updating my portfolio and make sure it relates with my new skills*
 ### Functionality / features
 **My portfolio website has the below features**
@@ -32,7 +32,7 @@
 ![alt text](./docs/Portfolio_Workframe_PNG/About-Me.png "aboutMe-page")
 ![alt text](./docs/Portfolio_Workframe_PNG/My-Project.png "project-page")
 ![alt text](./docs/Portfolio_Workframe_PNG/Skills.png "skills-page")
-![alt text](./docs/Portfolio_Workframe_PNG/Blogs "blogList-page")
+![alt text](./docs/Portfolio_Workframe_PNG/Blogs.png "blogList-page")
 ![alt text](./docs/Portfolio_Workframe_PNG/Contact.png "contact-page")
 
 ## Screenshots
