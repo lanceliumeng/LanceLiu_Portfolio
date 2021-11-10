@@ -2,44 +2,32 @@
 
 ***
 
-## A link (URL) to my published portfolio website
+## A link (URL) to my published portfolio website :globe_with_meridians:
 [LanceLiu_Portfolio](https://lanceliu-portfolio.netlify.app/)
 
-## A link to my GitHub repo
+## A link to my GitHub repo :octocat:
 [LanceLiu_Github](https://github.com/lanceliumeng/LanceLiu_Portfolio)
 ***
 
 ## Description of my portfolio website, including,
 
-### Purpose
+### Purpose :wave:
 **This portfolio website will help me to find a web developer job. :grin:**  
 *In addition,I will keep updating my portfolio and make sure it relates with my new skills*
-### Functionality / features
+
+### Functionality / features :clap:
 **My portfolio website has the below features**
-* CSS flexbox control;
-* Font Awesome 5 icons;
-* My LOGO;
-* JS DOM function;
-* jQuery typing animation script;
-* cdnjs waypoints and owlCarousel2 combanition to create beautiful responsive carousel slider, in my case, blog list;
+* *CSS flexbox control;*
+* *Font Awesome 5 icons;*
+* *My Website LOGO Design;*
+* *JS DOM function;*
+* *jQuery typing animation script;*
+* *cdnjs waypoints and owlCarousel2 combanition to create beautiful responsive carousel slider, in my case, blog list;*
+* *Great responsive design*
 ***
 
-## Sitemap
+## Sitemap :octocat:
 ![alt text](./docs/sitemap.png "my portfolio website sitemap")
-
-## <i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i> Workframe (TLDR):wink:
-1. ***Home Page Workframe*** :octocat:
-![alt text](./docs/Portfolio_Workframe_PNG/Home-Page.png "home-page")
-2. ***About Me Page Workframe*** :octocat:
-![alt text](./docs/Portfolio_Workframe_PNG/About-Me.png "aboutMe-page")
-3. ***Project list Page Workframe*** :octocat:
-![alt text](./docs/Portfolio_Workframe_PNG/My-Project.png "project-page")
-4. ***Skills Page Workframe*** :octocat:
-![alt text](./docs/Portfolio_Workframe_PNG/Skills.png "skills-page")
-5. ***Blog List Page Workframe*** :octocat:
-![alt text](./docs/Portfolio_Workframe_PNG/Blogs.png "blogList-page")
-6. ***Contact Page Workframe*** :octocat:
-![alt text](./docs/Portfolio_Workframe_PNG/Contact.png "contact-page")
 
 ## Screenshots :tada::tada::tada:
 1. ***Home Page*** :video_game:
@@ -55,19 +43,19 @@
 6. ***Contact Page*** :video_game:
 ![alt text](./docs/Portfolio-Screenshots/contactPage.png "contact-page")
 
-## Target audience
+## Target audience :sun_with_face:
 **Potential employer, Peers developer or anyone interests about my portfolio. :heart_eyes:**
 
-## Tech stack (e.g. html, css, deployment platform, etc)
-* HTML5 :heart:
-* CSS :yellow_heart:
-* JavaScript :sparkling_heart: :star:
-* jQuery :thumbsup:
-* cdnjs :thumbsup:
-* Balsamiq-Wireframes :cat:
-* Draw.io :honeybee:
-* Netlify-Deployment-Platform :heartpulse:
-* Canva :sparkles:
-* Postman :cupid:
+## Tech stack (e.g. html, css, deployment platform, etc) :smile_cat:
+* HTML5 
+* CSS 
+* JavaScript 
+* jQuery 
+* cdnjs 
+* Balsamiq-Wireframes 
+* Draw.io 
+* Netlify-Deployment-Platform 
+* Canva 
+* Postman 
 
 
