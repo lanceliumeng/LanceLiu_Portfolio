@@ -614,7 +614,7 @@ section#skills{
 }
 .skills .skills-content .right-part .bars .progress-bar.jQ span{
     width:20%;
-    background:linear-gradient(45deg,#3f87a6, #ebf8e1, #f69d3c);
+    background:linear-gradient(45deg,#3f87a6, #e8f7dc, #f69d3c);
 }
 .skills .skills-content .right-part .bars .progress-bar.mangoDB span{
     width:20%;

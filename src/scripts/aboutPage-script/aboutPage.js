@@ -6,13 +6,13 @@ $(document).ready(function () {
             $('.navbar,.menu-btn').addClass('sticky');
         } else {
             $('.navbar,.menu-btn').removeClass('sticky');
-        };
+        }
         // =====for scroll btn function=====
         if (window.scrollY > 500) {
             $('.scroll-btn').addClass('working');
         } else {
             $('.scroll-btn').removeClass('working');
-        };
+        }
     });
     // =====for scroll btn working--DOM click function====
     $('.scroll-btn').click(function () {
@@ -35,7 +35,7 @@ $(document).ready(function () {
         loop: true,
     };
     let typedOne = new Typed('.typing-01', options);
-    // let typedTwo = new Typed('.typing-02', options);
+    let typedTwo = new Typed('.typing-02', options);
 
 
     // ===========owl-carousel script for blogs carousel==========
