@@ -27,36 +27,33 @@
 ## Sitemap
 ![alt text](./docs/sitemap.png "my portfolio website sitemap")
 
-## <i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i> Workframe (TLDR):wink::running:
-1. Home Page Workframe :octocat:
+## <i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i> Workframe (TLDR):wink:
+1. ***Home Page Workframe*** :octocat:
 ![alt text](./docs/Portfolio_Workframe_PNG/Home-Page.png "home-page")
-2. About Me Page Workframe :octocat:
+2. ***About Me Page Workframe*** :octocat:
 ![alt text](./docs/Portfolio_Workframe_PNG/About-Me.png "aboutMe-page")
-3. Project list Page Workframe :octocat:
+3. ***Project list Page Workframe*** :octocat:
 ![alt text](./docs/Portfolio_Workframe_PNG/My-Project.png "project-page")
-4. Skills Page Workframe :octocat:
+4. ***Skills Page Workframe*** :octocat:
 ![alt text](./docs/Portfolio_Workframe_PNG/Skills.png "skills-page")
-5. Blog List Page Workframe :octocat:
+5. ***Blog List Page Workframe*** :octocat:
 ![alt text](./docs/Portfolio_Workframe_PNG/Blogs.png "blogList-page")
-6. Contact Page Workframe :octocat:
+6. ***Contact Page Workframe*** :octocat:
 ![alt text](./docs/Portfolio_Workframe_PNG/Contact.png "contact-page")
 
 ## Screenshots :tada::tada::tada:
-1. Home Page :video_game:
+1. ***Home Page*** :video_game:
 ![alt text](./docs/Portfolio-Screenshots/homePage.jpeg "home-page")
-2. About Me Page :video_game:
+2. ***About Me Page*** :video_game:
 ![alt text](./docs/Portfolio-Screenshots/aboutMePage.png "aboutMe-page")
-3. Project List Page :video_game:
+3. ***Project List Page*** :video_game:
 ![alt text](./docs/Portfolio-Screenshots/projectListPage.png "project-page")
-4. Skill Page :video_game:
+4. ***Skill Page*** :video_game:
 ![alt text](./docs/Portfolio-Screenshots/skillsPage.png "skills-page")
-5. Blog List Page :video_game:
+5. ***Blog List Page*** :video_game:
 ![alt text](./docs/Portfolio-Screenshots/blogListPage.png "blogList-page")
-6. Contact Page :video_game:
+6. ***Contact Page*** :video_game:
 ![alt text](./docs/Portfolio-Screenshots/contactPage.png "contact-page")
-7. Mobile & Tablet View :video_game:
-![alt text](./docs/Portfolio-Screenshots/mobile-tabletView01.png "responsiveView-page")
-![alt text](./docs/Portfolio-Screenshots/mobile-tabletView02.png "responsiveView-page")
 
 ## Target audience
 **Potential employer, Peers developer or anyone interests about my portfolio. :heart_eyes:**
