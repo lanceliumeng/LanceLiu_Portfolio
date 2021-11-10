@@ -37,13 +37,13 @@
 
 ## Screenshots
 * ![alt text](./docs/Portfolio-Screenshots/homePage.jpeg "home-page")
-* ![alt text](./docs/Portfolio-Screenshots/aboutMePage.jpeg "aboutMe-page")
-* ![alt text](./docs/Portfolio-Screenshots/projectListPage.jpeg "project-page")
-* ![alt text](./docs/Portfolio-Screenshots/skillsPage.jpeg "skills-page")
-* ![alt text](./docs/Portfolio-Screenshots/blogListPage.jpeg "blogList-page")
-* ![alt text](./docs/Portfolio-Screenshots/contactPage.jpeg "contact-page")
-* ![alt text](./docs/Portfolio-Screenshots/mobile-tabletView01.jpeg "responsiveView-page")
-* ![alt text](./docs/Portfolio-Screenshots/mobile-tabletView02.jpeg "responsiveView-page")
+* ![alt text](./docs/Portfolio-Screenshots/aboutMePage.png "aboutMe-page")
+* ![alt text](./docs/Portfolio-Screenshots/projectListPage.png "project-page")
+* ![alt text](./docs/Portfolio-Screenshots/skillsPage.png "skills-page")
+* ![alt text](./docs/Portfolio-Screenshots/blogListPage.png"blogList-page")
+* ![alt text](./docs/Portfolio-Screenshots/contactPage.png "contact-page")
+* ![alt text](./docs/Portfolio-Screenshots/mobile-tabletView01.png "responsiveView-page")
+* ![alt text](./docs/Portfolio-Screenshots/mobile-tabletView02.png "responsiveView-page")
 
 ## Target audience
 **Potential employer, Peers developer or anyone interests about my portfolio**
