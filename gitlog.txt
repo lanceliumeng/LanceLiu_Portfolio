@@ -1,0 +1,299 @@
+commit 500d5064cd8e79f715f4ca0a8a0bc34c7f18f550
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Nov 12 11:52:31 2021 +1100
+
+    final adjust for my ppt
+
+commit 1d4fc27626163fba1f7fe75f02661a423ff0d476
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Nov 11 23:07:24 2021 +1100
+
+    complete ppt for my portfolio website
+
+commit 1ab4332714028bcfa4126ed9b92f1c9b1ba7502a
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 20:14:14 2021 +1100
+
+    final update for README file
+
+commit 20a57e0010bc3ce845b01c6b410eb0c1086ace47
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 20:04:42 2021 +1100
+
+    final adjust for README file
+
+commit 65ac8af70dff112dde181589bf8d172db3dbe582
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 19:59:15 2021 +1100
+
+    another text  update for README file
+
+commit 50ddc5d2c28ea5fb2dd7c8bbcfc35b3164095540
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 19:44:57 2021 +1100
+
+    add some emoji for README file
+
+commit 5764682a14834d58b0e3f61c96b536184a74b560
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 19:38:02 2021 +1100
+
+    update details for README file
+
+commit b772e12087e9f045328fe225c40dc7ad80d183c3
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 19:34:23 2021 +1100
+
+    complete README file
+
+commit d9169a69906f8e6523a72f7e2fdb8a217f1fe2e9
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 19:32:25 2021 +1100
+
+    update README file for images
+
+commit 473078784f12aee08613a5a2cf04212d03b32613
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 18:57:09 2021 +1100
+
+    update README file
+
+commit 3a62b1cc2b77e9354c6455c137ba764766e5cab3
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 18:40:28 2021 +1100
+
+    export workframe to png pic and saved them
+
+commit e3d97821272f0554d870e98daebdb9403eff8d4b
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 18:22:04 2021 +1100
+
+    updates for index html file
+
+commit b2e31cb0361765d4ee1e8d02dac858209890b826
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 18:20:42 2021 +1100
+
+    add SRI keys for each html files
+
+commit 6cecb3b2bc40b1e16d5de7445f83f872fcfd3158
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 10 12:44:20 2021 +1100
+
+     adjust sitemap and css file
+
+commit 6a8ca8cff39f416f449de510c49a5496b2ebcc90
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Tue Nov 9 20:37:25 2021 +1100
+
+    updates some workframes
+
+commit 6df0af737ab56ca8dc304ea7ddd6144f4750d1ec
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Tue Nov 9 17:58:31 2021 +1100
+
+    check responsive and adjust some media query
+
+commit 7563efb73d8059b764bf6c701b4d6d0f7cdf482d
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Tue Nov 9 15:36:43 2021 +1100
+
+    split whole html page to different pages in order to achieve assignment requirement, and also link them together
+
+commit 714f75d62327e617eea50c08399e7c6b3cd40420
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Tue Nov 9 11:39:12 2021 +1100
+
+    add resume page for html and css files
+
+commit 81659f0dc4a7a77f10fb2c555343d14137df0aaf
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 8 20:10:01 2021 +1100
+
+    copy index.html to root path
+
+commit b5b5092cfeccec64e3869ba2a9285961fd8071ed
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 8 19:59:50 2021 +1100
+
+    add typing animation for home page,update html css and js files
+
+commit 998ba86f92ef920306d26e6ecef6b763fd4b3f1f
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 8 13:37:24 2021 +1100
+
+    complete footer in html and css files
+
+commit f0b871aacf93543153f5eba1cf07c766a38faeaf
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 8 13:13:34 2021 +1100
+
+    complete contact form in html and css files
+
+commit e1b1afe05de4a3f3da28d58c6e67c9dbcad49895
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Sun Nov 7 20:35:57 2021 +1100
+
+    completed blog page details in html and css
+
+commit 8c83117b068de65609491d510adc30bc7da74555
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Nov 5 21:03:57 2021 +1100
+
+    half finsih blog one page layout in html and css
+
+commit 6c8ef9c0288c3833c5c7fc155643e4f52ef17141
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Nov 5 15:00:18 2021 +1100
+
+    complete blog home page in html css files
+
+commit d55e86ef3d00ef30d5139ccdacdce2c44ad8b3fa
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Nov 5 10:39:58 2021 +1100
+
+    add blog home page for html css and add page icon
+
+commit 56b30f662366a45cd0553a6fe444c17715fdd157
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Nov 5 09:01:00 2021 +1100
+
+    update color for skill bars
+
+commit 3f2ae91ed28896c2cc14224aaf913b80743327ae
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Nov 4 20:56:53 2021 +1100
+
+    update blogs btn in html and css files
+
+commit f60fa65c51ced764a205ebaa1ee674562a03168b
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Nov 4 20:12:40 2021 +1100
+
+    updates owl dot for blog list section
+
+commit 0290e5e2e7496f2f541f6698e8f8c854a6b41fbd
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Nov 4 20:07:12 2021 +1100
+
+    complete blog list section in html css and js files
+
+commit 7c73f90fab611f32e7adc5936f0de773bd8a0162
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Nov 4 13:06:46 2021 +1100
+
+    update animation for skill bars
+
+commit c2d03ed55860b454e6f7494693f0d8021f8a0568
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Wed Nov 3 16:41:47 2021 +1100
+
+    complete my skills part in html and css files
+
+commit b1fe18f0e4bc33b89e9df36afc44ba683540f84c
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Tue Nov 2 21:58:13 2021 +1100
+
+     finish project3 and update all projects including html css and js files
+
+commit 111f28c28bc775d672a0f25e329504a94b91a6b1
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Tue Nov 2 11:05:05 2021 +1100
+
+    update project II images html and css files
+
+commit 96e9aabdd09dc2435b565e61dcf2e260c15fcd73
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 1 20:36:56 2021 +1100
+
+    update project one files, including html css and js file
+
+commit fe6b61c78624c90aff7fd87716e61dae721f2bb0
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 1 16:19:19 2021 +1100
+
+    add projects html file in pages folder
+
+commit 01e6b72fb93b169b72bd7c68f57cefdd4f146e26
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 1 13:45:27 2021 +1100
+
+    update about me section in html and css files
+
+commit 43e275c8b3a6ebb44d537b0610fe512a343886d1
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Mon Nov 1 09:28:14 2021 +1100
+
+    updates jQuery function in index file
+
+commit 3734156885fa6831619636880083697b2b7c86cf
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Sat Oct 30 19:59:40 2021 +1100
+
+    add about section for html file
+
+commit 06943b42842523421e66a6168f73aff3568ea5a6
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Sat Oct 30 12:46:10 2021 +1100
+
+    delete gitlog.txt and will recreate at the end
+
+commit 0733edc6973737b359c43c5348dd07d1a2ffa628
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Sat Oct 30 12:34:37 2021 +1100
+
+    set media query and add git log file
+
+commit 00dbb2ab4281ce4ed82694f147b67e5935ec6015
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Oct 29 20:20:01 2021 +1100
+
+    update html css js files for navbar humbuger
+
+commit 9497122615069b80be7aa4a9b2e55bbf2056c595
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Oct 29 18:41:59 2021 +1100
+
+    update html file
+
+commit feb43fe4a02e0cc3493f5b5a44528f626b562f63
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Oct 29 18:32:20 2021 +1100
+
+    update html file for CORS Policy Error issue
+
+commit 84ad4c659e63c794584226b2d19d65646812d02a
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Fri Oct 29 14:56:56 2021 +1100
+
+    add gitignore and update workframe
+
+commit 84012f54f6d2525c7c3c8eb62f05ed6e1d8df659
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Oct 28 21:52:21 2021 +1100
+
+    update html and css files
+
+commit 8dc4a291b470995208776888c5bc6389257d64c5
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Oct 28 17:08:27 2021 +1100
+
+    update workframe
+
+commit 897ea88b3ec6686e99a959cb8766f85c67bc4d2b
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Oct 28 16:30:50 2021 +1100
+
+    create html css and js files in src folder
+
+commit d4512f6c647c5199ad33df258ad92183b108bc50
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Oct 28 16:25:40 2021 +1100
+
+    update requirement into READEME file
+
+commit 2aca8351425bc06e67737ae794e735b9bef85615
+Author: Lance Liu <lanceliumeng89@gmail.com>
+Date:   Thu Oct 28 16:14:13 2021 +1100
+
+    first commit -- README file
