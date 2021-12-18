@@ -3,7 +3,7 @@
 ***
 
 ## A link (URL) to my published portfolio website :globe_with_meridians:
-[LanceLiu_Portfolio](https://lanceliu-portfolio.netlify.app/)
+[LanceLiu_Portfolio](https://lanceliu.netlify.app/)
 
 ## A link to my GitHub repo :octocat:
 [LanceLiu_Github](https://github.com/lanceliumeng/LanceLiu_Portfolio)
