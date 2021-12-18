@@ -621,7 +621,7 @@ section#skills{
     background:linear-gradient(45deg,#673ab7,#ff00ca);
 }
 .skills .skills-content .right-part .bars .progress-bar.ruby span{
-    width:5%;
+    width:40%;
     background:linear-gradient(45deg,#e66465, #9198e5);
 }
 /* ----adjust progress-bar span, to make it looks like an arrow icon---- */
