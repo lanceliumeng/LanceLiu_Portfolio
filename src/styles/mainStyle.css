@@ -602,26 +602,26 @@ section#skills{
 /* ---set color and width for bars---- */
 .skills .skills-content .right-part .bars .progress-bar.html span{
     width:70%;
-    background:linear-gradient(45deg,#1fe6ff,#673AB7);
+    background:linear-gradient(45deg, #3f87a6, #e8f7dc, #f69d3c);
 }
 .skills .skills-content .right-part .bars .progress-bar.css span{
     width:50%;
     background:linear-gradient(45deg,#3bc0ff,#33ff00);
 }
 .skills .skills-content .right-part .bars .progress-bar.js span{
-    width:40%;
+    width:60%;
     background:linear-gradient(45deg,#ffee54,#ff00ca);
 }
 .skills .skills-content .right-part .bars .progress-bar.jQ span{
-    width:20%;
-    background:linear-gradient(45deg,#3f87a6, #e8f7dc, #f69d3c);
+    width:50%;
+    background:linear-gradient(45deg,#1fe6ff,#673AB7);
 }
 .skills .skills-content .right-part .bars .progress-bar.mangoDB span{
-    width:20%;
+    width:50%;
     background:linear-gradient(45deg,#673ab7,#ff00ca);
 }
 .skills .skills-content .right-part .bars .progress-bar.ruby span{
-    width:40%;
+    width:50%;
     background:linear-gradient(45deg,#e66465, #9198e5);
 }
 /* ----adjust progress-bar span, to make it looks like an arrow icon---- */
@@ -644,6 +644,11 @@ section#blogs{
 }
 .blogs{
     font-family: 'Poppins',sans-serif;
+}
+.blogs .blogs-content .blog-container a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
 /* ---for my blogs h2---- */
 .blogs .title2{
@@ -690,7 +695,7 @@ section#blogs{
     transition: all 0.3s ease;
 }
 .blogs .blogs-content .blog-container:hover{
-    background-color: #ee1515;
+    background-color: #0b80f4;
 }
 /* --for each whole container hover, the container and each img size has a little bit change with scale-- */
 /* @@@@@try to let each container looks like poke ball when it hover@@@@@ */
@@ -719,7 +724,7 @@ section#blogs{
     height: 150px;
     background-size: cover;
     /* object-fit: cover; css3 good point*/
-    border:5px solid #f00000;
+    border:5px solid #0d79cb;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -743,7 +748,7 @@ section#blogs{
     border-radius: 0;
 }
 .owl-dot.active,.owl-dot:hover{
-    background-color: #ee1515 !important;
+    background-color: #06cdfa !important;
     border-radius:10px
 }
 /* ---blog-btn control---- */
