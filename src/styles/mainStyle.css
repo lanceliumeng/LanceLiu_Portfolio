@@ -601,27 +601,27 @@ section#skills{
 }
 /* ---set color and width for bars---- */
 .skills .skills-content .right-part .bars .progress-bar.html span{
-    width:70%;
+    width:85%;
     background:linear-gradient(45deg, #3f87a6, #e8f7dc, #f69d3c);
 }
 .skills .skills-content .right-part .bars .progress-bar.css span{
-    width:50%;
+    width:80%;
     background:linear-gradient(45deg,#3bc0ff,#33ff00);
 }
 .skills .skills-content .right-part .bars .progress-bar.js span{
-    width:60%;
+    width:70%;
     background:linear-gradient(45deg,#ffee54,#ff00ca);
 }
 .skills .skills-content .right-part .bars .progress-bar.jQ span{
-    width:50%;
+    width:80%;
     background:linear-gradient(45deg,#1fe6ff,#673AB7);
 }
 .skills .skills-content .right-part .bars .progress-bar.mangoDB span{
-    width:50%;
+    width:90%;
     background:linear-gradient(45deg,#673ab7,#ff00ca);
 }
 .skills .skills-content .right-part .bars .progress-bar.ruby span{
-    width:50%;
+    width:100%;
     background:linear-gradient(45deg,#e66465, #9198e5);
 }
 /* ----adjust progress-bar span, to make it looks like an arrow icon---- */
